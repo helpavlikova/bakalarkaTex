@@ -1,0 +1,136 @@
+% options:
+% thesis=B bachelor's thesis
+% thesis=M master's thesis
+% czech thesis in Czech language
+% slovak thesis in Slovak language
+% english thesis in English language
+% hidelinks remove colour boxes around hyperlinks
+
+\documentclass[thesis=B,czech]{FITthesis}[2012/06/26]
+
+\usepackage[utf8]{inputenc} % LaTeX source encoded as UTF-8
+
+\usepackage{graphicx} %graphics files inclusion
+% \usepackage{amsmath} %advanced maths
+% \usepackage{amssymb} %additional math symbols
+
+\usepackage{dirtree} %directory tree visualisation
+
+% % list of acronyms
+% \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel]{glossaries}
+% \iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
+% \makeglossaries
+
+\newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
+\newcommand{\cotg}{\mathop{\mathrm{cotg}}} %cesky cotangens
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% ODTUD DAL VSE ZMENTE
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\department{Katedra softwarového inženýrství}
+\title{Virtuální historický průvodce - modul virtuální reality}
+\authorGN{Helena} %(křestní) jméno (jména) autora
+\authorFN{Pavlíková} %příjmení autora
+\authorWithDegrees{Helena Pavlíková} %jméno autora včetně současných akademických titulů
+\author{Helena Pavlíková} %jméno autora bez akademických titulů
+\supervisor{Ing. Jiří Chludil}
+\acknowledgements{Děkuji vedoucímu práce.}
+\placeForDeclarationOfAuthenticity{V~Praze}
+\declarationOfAuthenticityOption{4} %volba Prohlášení (číslo 1-6)
+\keywordsCS{VR aplikace historický průvodce, virtuální vizualizace architektury, databáze 3D modelů domů, památková péče, Unity3D}
+\keywordsEN{VR application historical guide, virtual visualization of architecture, database of 3D models of houses, historic building preservation, Unity 3D}
+% \website{http://site.example/thesis} %volitelná URL práce, objeví se v tiráži - úplně odstraňte, nemáte-li URL práce
+
+\begin{document}
+
+% \newacronym{CVUT}{{\v C}VUT}{{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze}
+% \newacronym{FIT}{FIT}{Fakulta informa{\v c}n{\' i}ch technologi{\' i}}
+
+\begin{introduction}
+	Technologie zabývající se vizualizacemi pro virtuální realitu jsou jedny z nejprogresivnějších odvětví dnešního IT sektoru. Mají široké spektrum využití, interaktivními hrami počínaje a architektonickými návrhy konče. Tyto technologie mají veliký potenciál do budoucna, kdy by se mohly například stát součástí výuky na školách či běžnou domácí zábavou.
+
+Projekt historického průvodce v sobě nese veliký přínos jak pro odbornou, tak pro širokou veřejnost. Vizualizace středověkých měst názorně přiblíží lidem naši historii, umožní lidem 21. století procházku po původním světě našich předků, což je zážitek, který osloví velké publikum. Zároveň ale tato práce nabízí využití i pro obory architektury nebo památkové péče, kde může napomoci vizualizovat staré či budoucí městské oblasti. Téma se také úzce souvisí s počítačovou grafikou a s vývojem počítačových her, takže jistě osloví  odborníky z této oblasti. Právě toto mnohostranné využití mě motivovalo k výběru daného tématu. 
+
+%níže uvedené části spíše do závěru
+Práce se zaobírá zobrazením výseku z městské scény podle zadané konfigurace. Zohlední konkrétní lokalitu, prostředí a například také i počasí. Uživatel pak bude moci se svým okolím interagovat.
+
+%strukturu později?
+V první části se věnuji analýze dané problematiky, kde zohledním jak konkrétní programy pro technologii VR, tak řešení vizualizací velkých měst obecně.
+
+Tato práce je součásti velkého projektu, který bude zpracovávat mnoho lidí několik let. Další jeho části, jakými jsou například databázové jádro, navigace či serverová optimalizace jsou pokryty v jiných semestrálních a bakalářských projektech.
+
+\end{introduction}
+
+\chapter{Cíl práce}
+
+Tato bakalářská práce se zaměří primárně na vizualizaci městské infrastruktury na základě dat získaných z databázového jádra. Výstupem bude aplikace podporující modul pro virtuální realitu, který umožní zobrazovat historii architektury českých měst. Teoretická část pak zanalyzuje všechny potřebné technologie, funkční a nefunkční požadavky a také konkrétní existující řešení.
+
+\chapter{Analýza a návrh}
+	\section{Analýza podobných řešení}
+	
+		V této kapitole budou rozebrány aplikace, které se také zabývají problematikou vizualizace městských scén. Tato sekce bude rozdělena na několik podsekcí, totiž na oblast architektonických vizualizací, herních map a dále měst ve hrách pro virtuální realitu.
+
+		\subsection{Architektonické vizualizace}
+
+			Rozsáhlé 3D modely měst bývají často používány pro účely rozvoje urbanismu a infrastruktury a proto jsou často vytvářeny tak, aby poskytovaly pokud možno co nejúplnější pohled na město. Proto se od tématu této bakalářské práce odchylují hlavně snahou zobrazit co nejvíc budov najednou převážně z pohledu ptačí perspektivy beze snahy pro optimalizaci a vyšší LoD. Příklady takovýchto řešení jsou mimo jiné projekty Vizicities, WRLD3D či 3DCityDB. Podrobněji zde bude rozebrána poslední jmenovaná z těchto aplikací.
+			\subsubsection{3DCityDB}
+			
+			Jedním z obsahově nejbližších existujících řešení problému, se kterým se potýká projekt Virtuální průvodce, je aplikace 3DCityDB. Jedná se o projekt zaštiťovaný Technickou univerzitou v Mnichově, konkrétně na katedře geoinformatiky. 3DCityDB je, jak již název napovídá, veliká databáze modelů budov, které dohromady tvoří konkrétní městskou scenérii. Tato aplikace se ujala v praxi hlavně v situacích, kdy měla samotná města zájem na uchovávání své stávající podoby v 3D modelu. Zároveň se také používá v různých výzkumných projektech.
+
+
+3DCityDB bylo vyvinuto v souladu se standardem CityGML, což je speciální podmnožina XML vhodná pro práci v oboru geografie. Zároveň pak prp svůj back-end aplikace využívá RDBMS typu Oracle, případně také speciální verzi PostgreSQL, tzv. PostGIS, který podporuje prostorové a lokační dotazy. Jakožto front-endový nástroj zde bylo zvoleno WebGL, vizualizace jednotlivých měst je tedy možné zobrazovat ve webovém prohlížeči. Aplikace podtřebuje ke svému fungování JRE, je Freeware a Opensource.
+
+Projekt 3DCityDB si kalde za cíl vizualizovat města v co nejucelenější podobě. Z toho také vyplývají jeho vlastnosti. Neklade přílišné nároky na LoD, přestože podporuje i modely s vyšší úrovní detailu (např. berlínská televizní věž má detailní model s velkým množstvím trojúhelníků, ovšem obytné domy v jejím okolí jsou převážně v podobě kvádrů s texturami). Tato aplikace pojme velké množství modelů (údajně až několik milionů), které zobrazuje postupně po částech (tzv. tiling strategy).
+
+Tato aplikace má sice blízko k projektu Virtuální průvodce, ovšem zaměřuje se hlavně na celkové vizualizace měst, zejména pro potřeby městské správy, rozvoje infrastruktury apod. Tato bakalářská práce se naproti tomu bude zabývat zobrazením pouze menšího záběru z velké databáze, díky čemuž by mělo být možné použít modely s vyšším LOD. Zároveň si také tato práce klade za cíl větší obecnost (budeme pracovat s klasickými 3D formáty, jako je STL a ne specifickými geografickými formáty typu GML) a vyšší uživatelskou přívětivost.
+
+
+	
+	\section{Analýza použitých technologií}
+	\section{Analýza napojení na datové úložiště}
+	\section{Funkční a nefunkční požadavky}
+	Tato kapitola se zabývá rozborem funkčních a nefunkčních požadavků, které bude výsledná aplikace podporovat či nikoliv. Tyto požadavky pomáhají vymezit rámec aplikace a její celkovou finální podobu.
+	\begin{description}
+	
+ 		\item \textbf{F1 - vizualizace městské scény}
+ 		 			
+ 			Systém přenese uživatele na konkrétní místo ve městě, jinými slovy vygeneruje modely v nejbližší blízkosti podle konkétní specifikace požadované uživatelem. Zohlední také světelné a atmosférické podmínky, podle konfigurace scénu tedy zobrazí například ve tmě, ráno, v dešti, za sněhu apod. K tomuto bude potřeba načíst modely z databáze, rozmístit je v dané konfiguraci, nastavit textury a materiály podle počasí a přidat skybox.
+
+ 		\item \textbf{F1.1 - interaktivní uživatelské rozhraní}
+ 		
+ 		Systém umožní uživateli se svým okolím interagovat, a tím je lépe prozkoumávat. Například při ukázání na dům se zobrazí jednoduché informace o tomto domě, dále by bylo například možné zhasnout či rozsvítit lampu a tím změnit nasvícení modelů atd.
+ 		
+ 		\item \textbf{F2 - komunikace s datovým úložištěm}
+ 		
+ 		Aplikace bude modely získávat z vnější databáze, ke které bude přistupovat pomocí RestAPI. Tento přístup by měl zajistit efektivní zobrazování scény v závislosti na konkrétní lokaci, kdy se zobrazí pouze ty modely, které jsou v nejbližší blízkosti daných souřadnic. V databázi budou mimo samotných modelů uloženy také jejich transformační matice pro správné umístění v prostoru a zároveň jejich různé materiály a textury pro různá počasí.
+ 		
+ 		\item \textbf{F3 - modul pro VR}
+ 		
+ 		Během vývoje bude aplikace vytvářena pro PC, celkový výsledek bude ovšem funkční pro technologii VR brýlí. Jelikož Unity3D engine podporuje široké množství VR technologií, bude výsledná aplikace přenositelná na téměř jakékoli technologie virtuální reality. Protože základní myšlenka aplikace je vizualizace města pouze v nejbližším okruhu uživatele, skvěle tak koresponduje s omezeným prostorem, které technologie VR v dnešní době podporují.
+ 		
+ 		\item \textbf{F4 - administrační interface}
+ 		
+ 		Aplikace bude uživatelnům také umožňovat vlastní konfiguraci. Tato funkcionalita je určena pouze pro specifické uživatele, proto bude tato umístěna stranou ve vedlejším menu. Systém bude možné přenastavit dle vlastních preferencí, bude tedy možné nahrát do města nové domy, nově je rozmístit a vložit je do nové databáze.
+ 		
+ 	\end{description}	
+	
+
+\begin{conclusion}
+	%sem napište závěr Vaší práce
+\end{conclusion}
+
+\bibliographystyle{csn690}
+\bibliography{mybibliographyfile}
+
+\appendix
+
+\chapter{Seznam použitých zkratek}
+% \printglossaries
+\begin{description}
+	\item[GUI] Graphical user interface
+	\item[XML] Extensible markup language
+\end{description}
+
+
+\end{document}
