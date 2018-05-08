@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  7 MAY 2018 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  9 MAY 2018 00:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,6 +598,25 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box30
 \rot@mess@toks=\toks26
 )
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+\csq@reset=\count156
+\csq@gtype=\count157
+\csq@glevel=\count158
+\csq@qlevel=\count159
+\csq@maxlvl=\count160
+\csq@tshold=\count161
+\csq@ltx@everypar=\toks27
+
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
@@ -630,10 +649,10 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@rulewidth=\dimen160
 \DT@dotwidth=\dimen161
 \DTbaselineskip=\dimen162
-\DT@counti=\count156
-\DT@countii=\count157
-\DT@countiii=\count158
-\DT@countiv=\count159
+\DT@counti=\count162
+\DT@countii=\count163
+\DT@countiii=\count164
+\DT@countiv=\count165
 \DT@indent=\dimen163
 \DT@parskip=\dimen164
 \DT@baselineskip=\dimen165
@@ -641,23 +660,23 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count160
+\lst@mode=\count166
 \lst@gtempboxa=\box31
-\lst@token=\toks27
-\lst@length=\count161
+\lst@token=\toks28
+\lst@length=\count167
 \lst@currlwidth=\dimen166
-\lst@column=\count162
-\lst@pos=\count163
+\lst@column=\count168
+\lst@pos=\count169
 \lst@lostspace=\dimen167
 \lst@width=\dimen168
-\lst@newlines=\count164
-\lst@lineno=\count165
+\lst@newlines=\count170
+\lst@lineno=\count171
 \lst@maxwidth=\dimen169
 
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count166
-\lst@skipnumbers=\count167
+\c@lstnumber=\count172
+\lst@skipnumbers=\count173
 \lst@framebox=\box32
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
@@ -670,15 +689,15 @@ Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
 (c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count168
-\calc@Bcount=\count169
+\calc@Acount=\count174
+\calc@Bcount=\count175
 \calc@Adimen=\dimen170
 \calc@Bdimen=\dimen171
 \calc@Askip=\skip188
 \calc@Bskip=\skip189
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count170
+\calc@Ccount=\count176
 \calc@Cskip=\skip190
 )
 (c:/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -708,9 +727,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box33
-\AM@global@opts=\toks28
-\AM@toc@title=\toks29
-\c@AM@survey=\count171
+\AM@global@opts=\toks29
+\AM@toc@title=\toks30
+\c@AM@survey=\count177
 \AM@templatesizebox=\box34
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -719,6 +738,11 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'czech'.
+
 (./BP_Pavlíková_Helena_2018.tex.aux)
 \openout1 = `BP_Pavlíková_Helena_2018.tex.aux'.
 
@@ -752,7 +776,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count172
+\c@section@level=\count178
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -767,19 +791,19 @@ LaTeX Info: Redefining \nameref on input line 45.
 
 (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
+\scratchcounter=\count179
 \scratchdimen=\dimen174
 \scratchbox=\box36
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count176
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count182
 \MPscratchDim=\dimen175
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks32
 )
-\c@lstlisting=\count179
+\c@lstlisting=\count185
  (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -788,7 +812,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<cvut-logo-bw.pdf, id=287, 554.07pt x 193.29715pt>
+<cvut-logo-bw.pdf, id=295, 554.07pt x 193.29715pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
 <use cvut-logo-bw.pdf>
 Package pdftex.def Info: cvut-logo-bw.pdf  used on input line 45.
@@ -856,10 +880,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
  [9
 
-] [10]) [11] [12
-
 ]
-(./BP_Pavlíková_Helena_2018.tex.lof) [13] [14
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [10])
+[11] [12
+
+] (./BP_Pavlíková_Helena_2018.tex.lof) [13] [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
@@ -879,24 +906,24 @@ l.56 \chapter
 ] [3] [4
 
 ] [5]
-<3dcitydb.png, id=479, 658.71094pt x 502.12593pt>
+<3dcitydb.png, id=498, 658.71094pt x 502.12593pt>
 File: 3dcitydb.png Graphic file (type png)
 <use 3dcitydb.png>
 Package pdftex.def Info: 3dcitydb.png  used on input line 83.
 (pdftex.def)             Requested size: 369.00627pt x 281.28821pt.
  [6 <./3dcitydb.png>]
-<vsp2.png, id=490, 352.31625pt x 275.52937pt>
+<vsp2.png, id=508, 352.31625pt x 275.52937pt>
 File: vsp2.png Graphic file (type png)
 <use vsp2.png>
 Package pdftex.def Info: vsp2.png  used on input line 108.
 (pdftex.def)             Requested size: 352.31538pt x 275.52869pt.
-<vsp.png, id=491, 343.2825pt x 270.25969pt>
+<vsp.png, id=509, 343.2825pt x 270.25969pt>
 File: vsp.png Graphic file (type png)
 <use vsp.png>
 Package pdftex.def Info: vsp.png  used on input line 115.
 (pdftex.def)             Requested size: 343.28165pt x 270.25902pt.
  [7]
-<tomb.jpg, id=499, 493.89317pt x 397.485pt>
+<tomb.jpg, id=517, 493.89317pt x 397.485pt>
 File: tomb.jpg Graphic file (type jpg)
 <use tomb.jpg>
 Package pdftex.def Info: tomb.jpg  used on input line 135.
@@ -905,7 +932,7 @@ Package pdftex.def Info: tomb.jpg  used on input line 135.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./vsp2.png>] [9 <./vsp.png>] [10 <./tomb.jpg>] [11] [12]
-<VRTKsetup.png, id=532, 457.71pt x 673.01437pt>
+<VRTKsetup.png, id=550, 457.71pt x 673.01437pt>
 File: VRTKsetup.png Graphic file (type png)
 <use VRTKsetup.png>
 Package pdftex.def Info: VRTKsetup.png  used on input line 188.
@@ -920,290 +947,310 @@ LaTeX Warning: Float too large for page by 104.41248pt on input line 191.
 
 [13] [14 <./VRTKsetup.png>] [15] [16
 
-] [17]
-<architektura.pdf, id=559, 597.55246pt x 845.07718pt>
-File: architektura.pdf Graphic file (type pdf)
-<use architektura.pdf>
-Package pdftex.def Info: architektura.pdf  used on input line 251.
-(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-
-Overfull \hbox (228.551pt too wide) in paragraph at lines 251--252
-[][] 
- []
+]
+<appArch.pdf, id=573, 315.66835pt x 484.58742pt>
+File: appArch.pdf Graphic file (type pdf)
+<use appArch.pdf>
+Package pdftex.def Info: appArch.pdf  used on input line 232.
+(pdftex.def)             Requested size: 369.01257pt x 566.47697pt.
 
 
-LaTeX Warning: Float too large for page by 278.604pt on input line 254.
+LaTeX Warning: Float too large for page by 0.00586pt on input line 235.
 
-[18] [19 <./architektura.pdf>] [20]
-Overfull \hbox (1.11423pt too wide) in paragraph at lines 336--337
+[17] [18 <./appArch.pdf>]
+<ERmodel.png, id=679, 758.835pt x 138.5175pt>
+File: ERmodel.png Graphic file (type png)
+<use ERmodel.png>
+Package pdftex.def Info: ERmodel.png  used on input line 258.
+(pdftex.def)             Requested size: 595.81416pt x 108.75972pt.
+ [19] [20 <./ERmodel.png>] [21]
+Overfull \hbox (1.11423pt too wide) in paragraph at lines 343--344
 []\T1/lmr/m/n/10.95 Uºivatel v ad-mi-nis-trá-tor-ském menu vy-bere po-loºku "vl
 o-ºit bu-dovu". 
  []
 
-<UCdiagram.png, id=668, 404.26031pt x 324.46219pt>
+<UCdiagram.png, id=701, 404.26031pt x 324.46219pt>
 File: UCdiagram.png Graphic file (type png)
 <use UCdiagram.png>
-Package pdftex.def Info: UCdiagram.png  used on input line 348.
+Package pdftex.def Info: UCdiagram.png  used on input line 355.
 (pdftex.def)             Requested size: 404.25932pt x 324.46138pt.
 
-Overfull \hbox (35.25932pt too wide) in paragraph at lines 348--349
+Overfull \hbox (35.25932pt too wide) in paragraph at lines 355--356
 [][] 
  []
 
-[21]
-Overfull \hbox (0.31868pt too wide) in paragraph at lines 361--362
+
+Overfull \hbox (0.31868pt too wide) in paragraph at lines 368--369
 \T1/lmr/m/n/10.95 API bylo na-vr-ºeno co nej-jed-no-du-²eji, ale zá-ro-ve¬ tak,
  aby pod-po-ro-valo v²echny
  []
 
-[22 <./UCdiagram.png>]
-Overfull \hbox (5.73126pt too wide) in paragraph at lines 401--402
+[22] [23 <./UCdiagram.png>]
+Overfull \hbox (5.73126pt too wide) in paragraph at lines 408--409
 []\T1/lmr/m/n/10.95 Do bu-doucna bu-deme ex-pe-ri-men-to-vat i s moº-ností ucho
 -
  []
 
-[23]
-<api.png, id=698, 267.24844pt x 505.13719pt>
+<api.png, id=724, 267.24844pt x 505.13719pt>
 File: api.png Graphic file (type png)
 <use api.png>
-Package pdftex.def Info: api.png  used on input line 425.
+Package pdftex.def Info: api.png  used on input line 432.
 (pdftex.def)             Requested size: 267.24779pt x 505.13596pt.
-<apiJSON.png, id=699, 253.69781pt x 407.27156pt>
+<apiJSON.png, id=725, 253.69781pt x 407.27156pt>
 File: apiJSON.png Graphic file (type png)
 <use apiJSON.png>
-Package pdftex.def Info: apiJSON.png  used on input line 432.
+Package pdftex.def Info: apiJSON.png  used on input line 439.
 (pdftex.def)             Requested size: 253.69719pt x 407.27055pt.
- [24] [25 <./api.png>] [26 <./apiJSON.png>]
+[24] [25 <./api.png>] [26 <./apiJSON.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 444.
+(hyperref)                than one, level fixed on input line 451.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 448.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 455.
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 456.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 463.
  [27
 
-] [28] [29] [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+] [28] [29]
+<screen1.png, id=823, 776.14969pt x 599.23875pt>
+File: screen1.png Graphic file (type png)
+<use screen1.png>
+Package pdftex.def Info: screen1.png  used on input line 561.
+(pdftex.def)             Requested size: 369.00655pt x 284.89738pt.
+ [30]
+[31 <./screen1.png>]
+Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [31]
-<MockMisto.png, id=847, 701.62125pt x 481.8pt>
+ [32]
+<MockMisto.png, id=883, 701.62125pt x 481.8pt>
 File: MockMisto.png Graphic file (type png)
 <use MockMisto.png>
-Package pdftex.def Info: MockMisto.png  used on input line 610.
+Package pdftex.def Info: MockMisto.png  used on input line 626.
 (pdftex.def)             Requested size: 369.00972pt x 253.39723pt.
-
-[32]
-<MockPocasi.png, id=854, 701.62125pt x 437.635pt>
+<MockPocasi.png, id=885, 701.62125pt x 437.635pt>
 File: MockPocasi.png Graphic file (type png)
 <use MockPocasi.png>
-Package pdftex.def Info: MockPocasi.png  used on input line 619.
+Package pdftex.def Info: MockPocasi.png  used on input line 635.
 (pdftex.def)             Requested size: 369.00972pt x 230.16916pt.
 
-Overfull \hbox (1.4751pt too wide) in paragraph at lines 625--626
+Overfull \hbox (1.4751pt too wide) in paragraph at lines 641--642
 \T1/lmr/m/n/10.95 Administrátorský re-ºim, ne-boli re-ºim ar-chi-tekta (Ar-chi-
 tect Mode), bude umoº-
  []
 
-<ArchitectMock.png, id=856, 524.96124pt x 513.92pt>
+<ArchitectMock.png, id=887, 524.96124pt x 513.92pt>
 File: ArchitectMock.png Graphic file (type png)
 <use ArchitectMock.png>
-Package pdftex.def Info: ArchitectMock.png  used on input line 628.
+Package pdftex.def Info: ArchitectMock.png  used on input line 644.
 (pdftex.def)             Requested size: 369.00833pt x 361.24716pt.
-
+[33] [34 <./MockMisto.png> <./MockPocasi.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33 <./MockMisto.png>] [34 <./MockPocasi.png>] [35 <./ArchitectMock.png>] [36]
- [37
+ [35 <./ArchitectMock.png>] [36] [37]
+<screen2.png, id=921, 959.08313pt x 606.01407pt>
+File: screen2.png Graphic file (type png)
+<use screen2.png>
+Package pdftex.def Info: screen2.png  used on input line 732.
+(pdftex.def)             Requested size: 369.00668pt x 233.16356pt.
+ [38 <./screen2.png>] [39
 
-]
-[38
+] [40
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 2922) in paragraph at lines 712--717
+Underfull \hbox (badness 2922) in paragraph at lines 753--757
 []\T1/lmr/m/sc/10.95 Chair of Ge-o-in-for-ma-tics, Tech-nische Uni-ver-si-tät M
 ün-
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 712--717
+Underfull \hbox (badness 10000) in paragraph at lines 753--757
 \T1/lmr/m/sc/10.95 chen\T1/lmr/m/n/10.95 , 3D City Da-ta-base for Ci-tyGML Do-c
-u-men-tation ver-sion
+u-men-tation ver-
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 712--717
-\T1/lmr/m/n/10.95 3.3 [on-line], in []$\T1/lmtt/m/n/10.95 https : / / 3dcitydb\
-OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 net$[]\T1/lmr/m/n/10.95 , 2016, [cit. 18
-. 4. 2018],
+Underfull \hbox (badness 3138) in paragraph at lines 753--757
+\T1/lmr/m/n/10.95 sion 3.3 [on-line], 2016, [cit. 18. 4. 2018], do-stupné z []$
+\T1/lmtt/m/n/10.95 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--751
-[]\T1/lmr/m/sc/10.95 Unity Tech-no-lo-gies\T1/lmr/m/n/10.95 , VR over-view [on-
-line], in []$\T1/lmtt/m/n/10.95 https :
+Underfull \hbox (badness 10000) in paragraph at lines 753--757
+\T1/lmtt/m/n/10.95 / / github\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / 3dci
+tydb / 3dcitydb / blob / master / Documentation /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--751
-\T1/lmtt/m/n/10.95 / / docs\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 unity3d\OML/
-lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com$[]\T1/lmr/m/n/10.95 , 2018, [cit. 29. 4.
- 2018], Do-stupné z
- []
-
-
-Underfull \hbox (badness 1552) in paragraph at lines 761--766
+Underfull \hbox (badness 4556) in paragraph at lines 797--801
 []\T1/lmr/m/sc/10.95 Unity Tech-no-lo-gies\T1/lmr/m/n/10.95 , JSON Se-ri-a-li-z
-ation [on-line], in []$\T1/lmtt/m/n/10.95 https : / /
+ation [on-line], 2018, [cit.
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 761--766
-\T1/lmtt/m/n/10.95 docs\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 unity3d\OML/lmm/
-m/it/10.95 :\T1/lmtt/m/n/10.95 com$[]\T1/lmr/m/n/10.95 , 2018, [cit. 29. 4. 201
-8], Do-stupné z []$\T1/lmtt/m/n/10.95 https : / /
+Underfull \hbox (badness 10000) in paragraph at lines 797--801
+\T1/lmr/m/n/10.95 29. 4. 2018], do-stupné z []$\T1/lmtt/m/n/10.95 https : / / d
+ocs\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 unity3d\OML/lmm/m/it/10.95 :\T1/lmtt
+/m/n/10.95 com / Manual /
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 768--773
+Underfull \hbox (badness 4353) in paragraph at lines 803--807
 []\T1/lmr/m/sc/10.95 Programmer\T1/lmr/m/n/10.95 , Se-ri-a-lize and De-se-ri-a-
-lize Json and Json Array in
+lize Json and Json Array
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--773
-\T1/lmr/m/n/10.95 Do-stupné z []$\T1/lmtt/m/n/10.95 https : / / stackoverflow\O
-ML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / questions / 36239705 /
- []
-
-[39]
-Underfull \hbox (badness 4072) in paragraph at lines 775--780
-[]\T1/lmr/m/sc/10.95 Mono Pro-ject\T1/lmr/m/n/10.95 , FAQ: Secu-rity [on-line],
- in []$\T1/lmtt/m/n/10.95 http : / / www\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95
- mono -[]
+Underfull \hbox (badness 3029) in paragraph at lines 803--807
+\T1/lmr/m/n/10.95 in Unity [on-line], 15. 2. 2017, [cit. 29. 4. 2018], do-stupn
+é z
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 783--788
-\T1/lmr/m/n/10.95 [on-line], in []$\T1/lmtt/m/n/10.95 https : / / answers\OML/l
-mm/m/it/10.95 :\T1/lmtt/m/n/10.95 unity\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 
-com$[]\T1/lmr/m/n/10.95 , 2018, [cit. 3. 5. 2018],
+Underfull \hbox (badness 10000) in paragraph at lines 803--807
+[]$\T1/lmtt/m/n/10.95 https : / / stackoverflow\OML/lmm/m/it/10.95 :\T1/lmtt/m/
+n/10.95 com / questions / 36239705 / serialize -[]
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 816--820
+[]\T1/lmr/m/sc/10.95 Nig\T1/lmr/m/n/10.95 , How to va-li-date SSL cer-ti-fi-ca-
+tes when using Htt-
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 791--796
+Underfull \hbox (badness 1248) in paragraph at lines 816--820
+\T1/lmr/m/n/10.95 pWebRequest [on-line], 17. 9. 2014, [cit. 3. 5. 2018], do-stu
+pné z
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--820
+[]$\T1/lmtt/m/n/10.95 https : / / answers\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.9
+5 unity\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / questions / 792342 / how -
+[] to -[] validate -[]
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 823--827
 []\T1/lmr/m/sc/10.95 TheStonefox\T1/lmr/m/n/10.95 , The MIT Li-cense (MIT) [on-
-line], in []$\T1/lmtt/m/n/10.95 https : / /
+line], 2018, [cit. 5.
  []
 
-[40] [41
 
-] [42] [43
+Underfull \hbox (badness 3568) in paragraph at lines 829--833
+\T1/lmr/m/n/10.95 do-stupné z []$\T1/lmtt/m/n/10.95 https : / / www\OML/lmm/m/i
+t/10.95 :\T1/lmtt/m/n/10.95 turbosquid\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 c
+om / FullPreview / Index\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 cfm /
+ []
 
-] [44
+[42] [43
 
-]
-<scenar.pdf, id=953, 614.295pt x 794.97pt>
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf>
-Package pdftex.def Info: scenar.pdf  used on input line 858.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf>
-Package pdftex.def Info: scenar.pdf  used on input line 858.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<scenar.pdf, id=956, page=1, 614.295pt x 794.97pt>
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 858.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 858.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [45]
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 858.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 858.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 858.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [46 <./scenar.pdf>]
-<dotaznik.pdf, id=981, 614.295pt x 794.97pt>
-File: dotaznik.pdf Graphic file (type pdf)
-<use dotaznik.pdf>
-Package pdftex.def Info: dotaznik.pdf  used on input line 861.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: dotaznik.pdf Graphic file (type pdf)
-<use dotaznik.pdf>
-Package pdftex.def Info: dotaznik.pdf  used on input line 861.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<dotaznik.pdf, id=984, page=1, 614.295pt x 794.97pt>
-File: dotaznik.pdf Graphic file (type pdf)
-<use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 861.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: dotaznik.pdf Graphic file (type pdf)
-<use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 861.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [47
+] [44] [45
+
+] [46
 
 ]
+<scenar.pdf, id=990, 614.295pt x 794.97pt>
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf>
+Package pdftex.def Info: scenar.pdf  used on input line 912.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf>
+Package pdftex.def Info: scenar.pdf  used on input line 912.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<scenar.pdf, id=993, page=1, 614.295pt x 794.97pt>
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [47]
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [48 <./scenar.pdf>]
+<dotaznik.pdf, id=1018, 614.295pt x 794.97pt>
+File: dotaznik.pdf Graphic file (type pdf)
+<use dotaznik.pdf>
+Package pdftex.def Info: dotaznik.pdf  used on input line 915.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: dotaznik.pdf Graphic file (type pdf)
+<use dotaznik.pdf>
+Package pdftex.def Info: dotaznik.pdf  used on input line 915.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<dotaznik.pdf, id=1021, page=1, 614.295pt x 794.97pt>
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 861.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: dotaznik.pdf Graphic file (type pdf)
+<use dotaznik.pdf, page 1>
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [49
+
+]
+File: dotaznik.pdf Graphic file (type pdf)
+<use dotaznik.pdf, page 1>
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 861.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 861.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [48 <./dotaznik.pdf>]
+ [50 <./dotaznik.pdf>]
 \tf@toc=\write5
 \openout5 = `BP_Pavlíková_Helena_2018.tex.toc'.
 
 \tf@lof=\write6
 \openout6 = `BP_Pavlíková_Helena_2018.tex.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 865.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 865.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 919.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 919.
 
 (./BP_Pavlíková_Helena_2018.tex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 865.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 865.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 919.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 919.
 Package rerunfilecheck Info: File `BP_Pavlíková_Helena_2018.tex.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: E45211E817DB8C85F17E7586E587C635;10338.
+(rerunfilecheck)             Checksum: 2B6AB47134A6C8DDBBCAFF4BB34054AE;10771.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 865.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 919.
  ) 
 Here is how much of TeX's memory you used:
- 16722 strings out of 492649
- 232076 string characters out of 6133385
- 420238 words of memory out of 5000000
- 20138 multiletter control sequences out of 15000+600000
+ 17303 strings out of 492649
+ 241362 string characters out of 6133385
+ 439264 words of memory out of 5000000
+ 20698 multiletter control sequences out of 15000+600000
  69936 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,49p,1112b,1920s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,18n,49p,1112b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2018/tex
 mf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2018/texmf-dist/fonts/enc/
 dvips/lm/lm-mathsy.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
@@ -1221,10 +1268,10 @@ fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
 /lm/lmtk10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on BP_Pavlíková_Helena_2018.tex.pdf (64 pages, 3336940 bytes).
+Output written on BP_Pavlíková_Helena_2018.tex.pdf (66 pages, 6851125 bytes).
 PDF statistics:
- 1130 PDF objects out of 1200 (max. 8388607)
- 1003 compressed objects within 11 object streams
- 277 named destinations out of 1000 (max. 500000)
- 650 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1167 PDF objects out of 1200 (max. 8388607)
+ 1032 compressed objects within 11 object streams
+ 287 named destinations out of 1000 (max. 500000)
+ 681 words of extra memory for PDF output out of 10000 (max. 10000000)
 

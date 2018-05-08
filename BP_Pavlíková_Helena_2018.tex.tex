@@ -1,11 +1,11 @@
 \documentclass[thesis=B,czech]{FITthesis}[2012/06/26]
-
 \usepackage[utf8]{inputenc} % LaTeX source encoded as UTF-8
 
 \usepackage{graphicx} %graphics files inclusion
 \usepackage{wrapfig}
 \usepackage{lscape}
 \usepackage{rotating}
+\usepackage{csquotes} %uvozovky
 \usepackage{epstopdf}
 \usepackage{dirtree} %directory tree visualisation
 \usepackage{listings} %code snippets
@@ -227,6 +227,13 @@ Mono je open source verze .NET frameworku. Jedná se o nástroj, který umožňu
 	\section{Návrh architektury}
 	Architektura celého projektu je navržena jako třívrstvá (viz obrázek \ref{fig:architektura}). Tato bakalářská práce se zabývá návrhem a implementací dvou svrchních vrstev, tedy prezentační a business vrstvy. Funkcionalita jednotlivých vrstev je popsána níže podrobněji.
 	
+	
+	\begin{figure}
+  		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{appArch.pdf}
+  		\caption{Návrh architektury celé aplikace}
+  		\label{fig:architektura}
+	\end{figure}
+	
 	\subsection{Prezentační vrstva}
 	Prezentační vrstva zajišťuje zobrazení celé scény a veškerou komunikaci přímo s uživatelem. Je implementována v souboru Generator.cs a dalších. Konkrétně se jedná o:
 		\begin{itemize}
@@ -245,13 +252,13 @@ Mono je open source verze .NET frameworku. Jedná se o nástroj, který umožňu
 		\end{itemize}
 	 
 	 \subsection{Datová vrstva}
-Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, které bude v PostgreSQL databázi obsahovat všechny modely, textury, jejich jednotlivé verze a další. Jedná se o robustní databázi, která bude zpracována nezávisle na ostatních vrstvách. Tato datová vrstva bude jádrem celého projektu, který bude kromě modulu VR (zpracovávaného v této práci) přenositelný na mnohá další zařízení. Proto je databázová vrstva zpracovávána nezávisle (v rámci jiné bakalářské práce) a tudíž bylo pro komunikaci s ní navrženo API. Jeho podrobná specifikaci je uvedena v kapitolách níže.
+Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, které bude v PostgreSQL databázi obsahovat všechny modely, textury, jejich jednotlivé verze atd. Jedná se o robustní databázi, která bude zpracována nezávisle na ostatních vrstvách. Tato datová vrstva bude jádrem celého projektu, který bude kromě modulu VR (zpracovávaného v této práci) přenositelný na mnohá další zařízení. Proto je databázová vrstva zpracovávána nezávisle v rámci jiné bakalářské práce (její datový model viz obr. \ref{fig:ERmodel} ). Tudíž bylo pro komunikaci s ní navrženo API. Jeho podrobná specifikace je uvedena v sekci \ref{sec:API}.
 	
-	\begin{figure}
-  		\includegraphics{architektura.pdf}
-  		\caption{Návrh architektury celé aplikace}
-  		\label{fig:architektura}
-	\end{figure}
+	\begin{sidewaysfigure}
+  		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ERmodel.png}
+  		\caption{ER (entitně vztahový) model databáze}
+  		\label{fig:ERmodel}
+	\end{sidewaysfigure}
 	
 		\section{Funkční a nefunkční požadavky}
 	Tato kapitola se zabývá rozborem funkčních a nefunkčních požadavků, které bude výsledná aplikace podporovat či nikoliv. Tyto požadavky pomáhají vymezit rámec aplikace a její celkovou finální podobu.
@@ -285,11 +292,11 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
  		
  		\item \textbf{N1 - komunikace s datovým úložištěm}
  		
- 		Aplikace bude modely získávat z vnější databáze, ke které bude přistupovat pomocí RestAPI. Tento přístup by měl zajistit efektivní zobrazování scény v závislosti na konkrétní lokaci, kdy se zobrazí pouze ty modely, které jsou v nejbližší blízkosti daných souřadnic. V databázi budou mimo samotných modelů uloženy také jejich transformační matice pro správné umístění v prostoru a zároveň jejich různé materiály a textury pro různá počasí.
+ 		Aplikace bude modely získávat z vnější databáze, ke které bude přistupovat pomocí REST API. Tento přístup by měl zajistit efektivní zobrazování scény v závislosti na konkrétní lokaci, kdy se zobrazí pouze ty modely, které jsou v nejbližší blízkosti daných souřadnic. V databázi budou mimo samotných modelů uloženy také jejich transformační matice pro správné umístění v prostoru a textury pro různá počasí.
  		
  		\item \textbf{N2 - simulátor pro desktop PC}
  		
- 		Aplikace bude mít pro potřeby testování i vestavěný simulátor, který bude napodobovat ovládání přes VR konzoli. Díky tomu nebude nutné k vývoji ani k prvotnímu testování vlastnit VR headset.
+ 		Systém bude mít pro potřeby testování i vestavěný simulátor, který bude napodobovat ovládání přes VR konzoli. Díky tomu nebude nutné k vývoji ani k prvotnímu testování vlastnit VR headset.
  		
  		
  	\end{description}	
@@ -305,8 +312,8 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
  		 	
  		 	\begin{enumerate}
  		 		\item Případ užití začíná ve chvíli, kdy si uživatel nasadí VR headset a objeví se na připravené startovní pozici.
-				\item Systém uživateli nabídne dialog, který umožní uživateli přesun na jinou lokalitu.
-				\item Uživatel zvolí ulici (nebo GPS souřadnice?) denní dobu, počasí a roční období, ve kterém se chce ocitnout (výchozí nastavení je léto, odpoledne, slunečno).
+				\item Systém uživateli po stisknutí tlačítka menu nabídne dialog, který umožní uživateli přesun na jinou lokalitu.
+				\item Uživatel zvolí ulici, denní dobu, počasí a roční období, ve kterém se chce ocitnout (výchozí nastavení je léto, odpoledne, slunečno).
 				\item Systém uživatele "přenese" na danou lokalitu tím, že kolem něj vygeneruje potřebné 3D modely domů ve správné konfiguraci (pozice, natočení, textury, skybox)
 				\item Uživatel může v omezeném prostoru definovaném VR headsetem procházet své okolí.
 			\end{enumerate} 		 			
@@ -334,7 +341,7 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
     		\item Uživatel poklepá na ikonu vedlejšího menu v pravém honím rohu a zvolí položku "Architect mode".
     		\item Systém uživateli zobrazí město z ptačí perspektivy a zobrazí administrátorské menu.
     		\item Uživatel v administrátorském menu vybere položku "vložit budovu".
-    		\item Systém uživateli zobrazí okno s pohledem do FS, kde si uživatel může najít soubor 3D modelu nově vkládané budovy.
+    		\item Systém uživateli zobrazí okno s pohledem do systému souborů, kde si uživatel může najít soubor 3D modelu nově vkládané budovy.
     		\item Uživatel pomocí myši umístí budovu na požadované místo.
     		\item Systém otevře potvrzovací okno, zda si je uživatel jistý pozicí nové budovy.
     		\item Uživatel potvrdí své rozhodnutí.
@@ -392,7 +399,7 @@ Databáze tedy vrátí na konkrétní dotaz nad touto množinou specifickou odpo
 			Čtyři klasické roční období uložené pomocí typu enum.
 
 		\item[Link na texturu]
-			Odkaz do FS na bitmapu dané textury.
+			Odkaz do FS (systému souborů) na bitmapu dané textury.
 
 		\item[Link na 3D model]
 			Odkaz do FS na link 3D modelu v daném formátu (např. obj).
@@ -442,9 +449,9 @@ Databáze tedy vrátí na konkrétní dotaz nad touto množinou specifickou odpo
     
 
 \subsubsection{Přímé propojení s databází}
- Toto téma bylo hlavní náplní týmového projektu HK (Hradec Králové) v rámci předmětu SP2. Kromě autorky této bakalářské práce se na dané semestrální práci podíleli také studenti FITu Josef Struž a Iuliia Ostrokomorets. 
+ Toto téma bylo hlavní náplní týmového projektu HK (Hradec Králové) v rámci předmětu SP2 (Softwarový týmový projekt 2). Kromě autorky této bakalářské práce se na dané semestrální práci podíleli také studenti FITu Josef Struž a Iuliia Ostrokomorets. 
    
-    K tomuto účelu byla použita knihovna NpSQL. V souboru Sqlconnector.cs ve třídě Sqlconnector je uložená proměnná “connecting”, která v sobě obsahuje informace o připojení k databázi (Server, Port atd.). Při inicializaci této třídy se vytvoří propojení s databází. Tato třída v sobě uchovává list Modelů (“Model” je struktura, která obsahuje všechny informace o daném modelu, které se vytáhly z databáze). K přístupu k Motelům se používá funkce GetModel(int i). Nejdůležitější části tohoto kódu jsou níže:
+    K tomuto účelu byla použita knihovna NpSQL. V souboru Sqlconnector.cs ve třídě Sqlconnector je uložená proměnná “connecting”, která v sobě obsahuje informace o připojení k databázi (Server, Port atd.). Při inicializaci této třídy se vytvoří propojení s databází. Tato třída v sobě uchovává list Modelů (“Model” je struktura, která obsahuje všechny informace o daném modelu, které byly získány z databáze). Nejdůležitější části tohoto kódu jsou níže:
     \begin{lstlisting}[frame=single]
     public Sqlconnector()
     {
@@ -463,9 +470,9 @@ Databáze tedy vrátí na konkrétní dotaz nad touto množinou specifickou odpo
     
     \subsubsection{JSON v Unity}
 	
-	Finální aplikace ovšem nekomunikuje s databází přímo, jako to bylo implementováno v projektu pro předmět SP2, nýbrž přes REST API (viz návrh použitého API v kapitole \ref{sec:API}). Navržené API bude komunikovat s databázovým serverem za pomoci souboru JSON. JSON je zavedený standard, takže jej Unity podporuje a nabízí i knihovny, které umožní jeho deserializaci. Jedná se konkrétně o vestavěnou třídu JSONUtility, která nabízí rozhraní pro serializaci i deserializaci JSON souboru. Je tedy možné snadno namapovat obsah JSON souboru do vytvořené třády s příslušnými třídními proměnnými, na které je možné JSON namapovat. \cite{UnityJSON}
+	Finální aplikace ovšem nekomunikuje s databází přímo, jako to bylo implementováno v projektu pro předmět SP2, nýbrž přes REST API (viz návrh použitého API v kapitole \ref{sec:API}). Navržené API bude komunikovat s databázovým serverem za pomoci souboru JSON (JavaScriptový objektový zápis). JSON je zavedený standard, takže jej Unity podporuje a nabízí i knihovny, které umožní jeho deserializaci. Jedná se konkrétně o vestavěnou třídu JSONUtility, která nabízí rozhraní pro serializaci i deserializaci JSON souboru. Je tedy možné snadno namapovat obsah JSON souboru do vytvořené třády s příslušnými třídními proměnnými, na které je možné JSON namapovat. \cite{UnityJSON}
 
-V tuto chvíli ovšem ještě není zavedena podpora polí objektů v rámci jednoho JSONu. \cite{UnityJSON} Vzhledem k tomu, že API pro projekt Virtuální Průvodce očekává JSON soubory právě v tomto formátu, neboli pole modelů budov v jediném souboru, je nutné tuto funkcionalitu dodatečně zajistit za pomocí dodatečných obalovacích tříd. Můžeme si tedy nadefinovat ještě jednou další třídu, která bude sloužit jako obal, který v sobě bude uchovávat pole modelů. V implementaci byla tato třída pojmenována Root, neboť je jakýmsi kořenem všech podtříd v rámci JSON souboru. Toto pole modelů má ovšem název, který by nebylo možno na nic v souboru JSON namapovat. Toto se dá jednoduše spravit tím, že před přijaté pole modelů od API po přečtení připojíme řetězec obsahující název proměnné, do které se uloží pole modelů s pomocí následující funkce.
+V tuto chvíli ovšem ještě není zavedena podpora polí objektů v rámci jednoho JSONu. \cite{UnityJSON} Vzhledem k tomu, že API pro projekt Virtuální Průvodce očekává JSON soubory právě v tomto formátu, neboli pole modelů budov v jediném souboru, je nutné tuto funkcionalitu dodatečně zajistit za pomoci dodatečných obalovacích tříd. Můžeme si tedy nadefinovat ještě jednou další třídu, která bude sloužit jako obal, který v sobě bude uchovávat pole modelů. V implementaci byla tato třída pojmenována Root, neboť je jakýmsi kořenem všech podtříd v rámci JSON souboru. Toto pole modelů má ovšem název, který by nebylo možno na nic v souboru JSON namapovat. To se dá jednoduše spravit tím, že před přijaté pole modelů od API po přečtení připojíme řetězec obsahující název proměnné, do které se uloží pole modelů s pomocí následující funkce.
 
 \begin{lstlisting}[frame=single]
 public string fixJson(string value)
@@ -546,11 +553,20 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
 	\end{lstlisting}
 	
 	\section{Vykreslení v Unity}
-    Pro vykreslování se využívá GameObject Generator ze souboru Generator.cs. Generátor má v sobě uložený vzor budovy “Building”. Při spuštění se vytvoří nový GameObject “Buildings”, který je rodičem všech ostatních budov (pokud by byla potřeba smazat nebo měnit velikost aktuální scény, stačí upravit pouze tohoto rodiče) a také se vygenerují všechny budovy. Každá budova obsahuje funkci Set(Model), která načte mash (pomocí třídy FastObjImporter) a pomocí zobrazovací matice nastaví pozici, rotaci a velikost.
+    Pro vykreslování se využívá GameObject Generator ze souboru Generator.cs. Generátor má v sobě uložený vzor budovy “Building”. Při spuštění se vytvoří nový GameObject “Buildings”, který je rodičem všech ostatních budov (pokud by bylo potřeba smazat nebo měnit velikost aktuální scény, stačí upravit pouze tohoto rodiče) a také se vygenerují všechny budovy. Každá budova obsahuje funkci Set(Model), která načte mash (pomocí třídy FastObjImporter) a pomocí zobrazovací matice nastaví pozici, rotaci a velikost. Ukázka běhu aplikace s načtenými modely je vidět na obrázku \ref{fig:buildings}
+    
+    
+
+\begin{figure}
+  		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{screen1.png}
+  		\caption{Ukázka běhu aplikace, modely budov převaty z \cite{building}}
+  		\label{fig:buildings}
+	\end{figure}
+    
     
     \subsection{Textury}
     
-    Odkaz na textury je nadefinovaný v proměnné, jejíž obsah byl získán z databáze přes API. Textury jsou načítány ze souboru ve FS, který je v této proměnné uložen. Soubor je otevřen, načten do pole bajtů a následně je toto pole bajtů vloženo do speciály třídy Texture2D, kterou interně definuje Unity. Kód tohoto načítání je převzat z (cit) ukázka níže.
+    Odkaz na textury je nadefinovaný v proměnné, jejíž obsah byl získán z databáze přes API. Textury jsou načítány ze souboru ve FS, který je v této proměnné uložen. Soubor je otevřen, načten do pole bajtů a následně je toto pole bajtů vloženo do speciály třídy Texture2D, kterou interně definuje Unity. Kód tohoto načítání je převzat z \cite{unityFAQtext}, ukázka níže.
 
 \begin{lstlisting}[frame=single]
   public static Texture2D LoadTexture(string filePath)
@@ -572,11 +588,11 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
         
         
     \subsection{StreamingAssets}
-Tento prototyp načítá modely i textury z FS. Je pravděpodobné, že v budoucnu bude naimplementováno i řešení, které si bude uchovávat binární soubory textur a 3D modelů přímo v databázi, ovšem pro tuto bakalářskou práci bylo prozatím zvoleno toto řešení, neboť je praktičtější na testování a zároveň efektivnější z hlediska fungování databáze.
+Tento prototyp načítá modely i textury za pomoci odkazu do FS, který získá přes API. Je pravděpodobné, že v budoucnu bude naimplementováno i řešení, které si bude uchovávat binární soubory textur a 3D modelů přímo v databázi, ovšem pro tuto bakalářskou práci bylo prozatím zvoleno toto řešení, neboť je praktičtější na testování a zároveň efektivnější z hlediska fungování databáze.
 
 To ovšem znamená, že i hotová zkompilovaná aplikace musí mít tyto odkazy na textury a modely k dispozici. To by mohlo způsobovat problémy z hlediska odkazů do FS, které by ve finálním nasazení aplikace už nemusely být na stejném místě, na kterém byly při vývoji.
 
-Tento problém řeší Unity za pomocí složky StreamingAssets. Jedná se o složku umístěnou v adresáři Assets, ke které je možno přistupovat dynamicky. Pokud budou tedy všechny soubory, které aplikace za běhu dynamicky načítá uloženy v této složce, budou k dispozici bez problémů i po kompilaci, neboť složka StreamingAssets je vždy nově vytvořena a přenesena i při kompilaci aplikace do nového projektu vedle spustitelného souboru. Ukázka dynamického volání souborů z této složky a jejich následné využití je k vidění níže:
+Tento problém řeší Unity za pomocí složky StreamingAssets. Jedná se o složku umístěnou v adresáři Assets, ke které je možno přistupovat dynamicky. Pokud budou tedy všechny soubory, které aplikace za běhu dynamicky načítá, uloženy v této složce, budou k dispozici bez problémů i po kompilaci, neboť složka StreamingAssets je vždy nově vytvořena a přenesena i při kompilaci aplikace do nového projektu vedle spustitelného souboru. Ukázka dynamického volání souborů z této složky a jejich následné využití je k vidění níže:
 
 \begin{lstlisting}[frame=single]
 objPath = Path.Combine(Application.streamingAssetsPath, model.file_link);
@@ -591,11 +607,11 @@ rend.material.mainTexture = LoadTexture(texturePath);
 	\section{Grafické uživatelské rozhraní}
 	\label{sec:GUI}
 	
-	Tato kapitola se bude věnovat všem záležitostem, které jsou spojeny s tvorbou GUI. V první části budou rozebrány specifika GUI pro technologie VR, v druhé pak samotné návrhy GUI pro aplikaci Virtuální průvodce.
+	Tato kapitola se bude věnovat všem náležitostem, které jsou spojeny s tvorbou GUI. V první části budou rozebrány specifika GUI pro technologie VR, v druhé pak samotné návrhy GUI pro aplikaci Virtuální průvodce.
 	
 	
 	\subsection{Použitelnost GUI pro VR}
-VR headset je velice odlišné prostředí, než na jaké je většina uživatelů z osobních počítačů či mobilních telefonů zvyklá. Navíc vzhledem k dosavadním cenám VR ještě nejsou tyto technologie tak rozšířené, takže se s nimi uživatelé setkávají spíše nahodile na různých akcích, ve VR hernách apod. Proto je nutné předpokládat, že uživatel, který naši aplikaci spustil, nikdy předtím VR headset na hlavě neměl. Tomuto předpokladu s musí návrh uživatelského prostředí podřídit a být tak jednoduchý a intuitivní, jak je to jen možné. Zcela jednoznačně bude dáván klad na minimalismus a přehlednost, aby uživatel, který poprvé drží v ruce ovladač VR, nemusel složitě zjišťovat, jak správně kliknout na malé tlačítko schované mezi mnoha dalšími.
+VR headset je velice odlišné prostředí, než na jaké je většina uživatelů z osobních počítačů či mobilních telefonů zvyklá. Navíc vzhledem k dosavadním cenám VR ještě nejsou tyto technologie tak rozšířené, takže se s nimi uživatelé setkávají spíše nahodile na různých akcích, ve VR hernách apod. Proto je nutné předpokládat, že uživatel, který naši aplikaci spustil, nikdy předtím VR headset na hlavě neměl. Tomuto předpokladu se musí návrh uživatelského prostředí podřídit a být tak jednoduchý a intuitivní, jak je to jen možné. Zcela jednoznačně bude dáván klad na minimalismus a přehlednost.
 	
 	\subsection{Prvotní návrh}
 V teté kapitole budou rozebrány prvotní návrhy (neboli wireframy) grafického uživatelského rozhraní. Finální verze se může nakonec lišit podle výsledků uživatelských testů.
@@ -622,7 +638,7 @@ Druhá obrazovka, která bude umístěna v hlavním menu, bude výběr počasí.
 	\end{figure}
 	
 	\subsubsection{Administrátorský režim}
-Administrátorský režim, neboli režim architekta (Architect Mode), bude umožňovat vkládání nových budov, případně úprava budov stávajících. Předpokládáme, že tento mód bude využíván pouze v PC verzi aplikace, protože je potřeba mít přístup a FS (pro vybrání souboru nově vkládané budovy) a ke klávesnici (pro vložení jejího popisu). Proto se při návrhu tohoto UI nemusí brát v potaz specifika návrhu pro VR headset, a wireframe na obr. \ref{fig:ArchitectMock} připomíná více klasické desktopové aplikace.
+Administrátorský režim, neboli režim architekta (Architect Mode), bude umožňovat vkládání nových budov, případně úprava budov stávajících. Předpokládáme, že tento mód bude využíván pouze v PC verzi aplikace, protože je potřeba mít přístup a FS (pro vybrání souboru nově vkládané budovy) a ke klávesnici (pro vložení jejího popisu). Proto se při návrhu tohoto UI nemusí brát v potaz specifika návrhu pro VR headset, wireframe na obr. \ref{fig:ArchitectMock} tudíž připomíná více klasické desktopové aplikace.
 
 \begin{figure}
   		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ArchitectMock.png}
@@ -630,19 +646,35 @@ Administrátorský režim, neboli režim architekta (Architect Mode), bude umož
   		\label{fig:ArchitectMock}
 	\end{figure}
 	
-	\subsection{Uživatelské testování}
+	\section{Uživatelské testování}
 	
-	Testování aplikace Virtuální Historický průvodce proběhne v rámci akce Muzejní noc 2018. Tato akce se bude konat až v červnu letošního roku, proto budou výsledky testování známy později. Uživatelé budou vedeni aplikací za pomocí moderátora, který bude postupovat podle přiloženého scénáře (příloha \ref{sec:scenar}). Po vyzkoušení aplikace uživatelé vyplní dotazník (příloha \ref{sec:dotaznik}) ohledně použitelnosti aplikace.
+	Testování nových aplikací uživateli samotnými před finálním nasazením je jedna z nejdůležitějších částí vývoje kteréhokoli softwaru. Pro VR aplikace toto tvrzení platí o to více, neboť se jedná o velice nové technologie a tak ještě nejsou ustálené formy a ty stávající nejsou plně prověřeny časem.
+	
+	 Uživatelské testování přináší unikátní pohled cílové skupiny na daný software, který samotné vývojáře často dokáže překvapit. I když je aplikace vyvíjena se znalostí nejdůležitějších principů UCD (user centred design), nikdy není jisté, že je pro uživatele přijatelná, dokud tak uživatelé sami neřeknou. Proto jsou data získaná formou uživatelského testování velice cennou informací pro tvorbu uživatelského rozhraní a často i logiky celého systému.
+	
+	\subsection{Specifika testování VR aplikací}
+	
+	Jak bylo zmíněno výše, VR brýle jsou zatím velice nové a časem neprověřené technologie, a o to více je důležité aplikace pro ně vyvíjené náležitě otestovat. Tyto testy se v určitých ohledech liší od klasického uživatelského testování pro mobilní či desktopové aplikace a to hned v několika bodech.
+	
+	 Jako u každého uživatelského testování je podstatné správně odhadnout svou cílovou skupinu a tedy i své testery. Proto bude do dotazníku k uživatelskému testování (příloha \ref{sec:dotaznik}) na prvním místě položena otázka o zkušenosti testerů s VR zařízeními. Je rozdílné, když aplikaci používá někdo, kdo VR nikdy nepoužíval a někdo, kdo má vlastní VR headset doma.
+	 
+	 Dále bude podstatné zajistit dobrý prostor a seznámit se s ním ještě před začátkem testování, neboť aplikace pro VR jsou téměř vždy používány v prostoru a nejinak tomu bude i u aplikace Virtuální historický průvodce.
+	 
+	 A poslední, ovšem neméně podstatnou odlišností testování VR, je pohodlí uživatelů. Jakmile si tester nasadí VR brýle, tak najednou přijde o jeden z nejzákladnějších lidských smyslů, o zrak. V tu chvíli je nutné, aby se mu plně věnoval moderátor, tedy aby se ujistil, že brýle dobře sedí, aby uživatele naváděl v prostoru a kontroloval, že zůstává ve vymezeném prostoru atd. Speciálně u nových uživatelů VR může v prvním okamžiku docházet k pocitům nejistoty, nevolnosti či závratě, a proto je naprosto nezbytné, aby se moderátor postaral o jejich pohodlí. \cite{VRuse}
+	
+	\subsection{Průběh testování aplikace}
+	
+	Testování aplikace Virtuální Historický průvodce proběhne v rámci akce Muzejní noc 2018. Tato akce se bude konat až v červnu letošního roku, proto budou výsledky testování známy později. Uživatelé budou vedeni aplikací za pomoci moderátora, který bude postupovat podle přiloženého scénáře (příloha \ref{sec:scenar}). Po vyzkoušení aplikace uživatelé vyplní dotazník (příloha \ref{sec:dotaznik}) ohledně použitelnosti aplikace.
 
 	\section{Uživatelská příručka}
 	
-	V této sekci budou popsány základní principy fungování aplikace Virtuální historický průvodce, včetně instalace a ovládání tohoto softwaru. Přestože výsledná aplikace bude přenositelná na různé VR zařízení, základní prototyp byl vyvíjen převážně pro stolní PC. Proto se zde věnujeme převážně instalací a spuštění na PC.
+	V této sekci budou popsány základní principy fungování aplikace Virtuální historický průvodce, včetně instalace a ovládání tohoto softwaru. Přestože výsledná aplikace bude přenositelná na různé VR zařízení, základní prototyp byl vyvíjen převážně pro stolní PC. Proto se zde věnujeme převážně instalaci a spuštění na PC.
 
 \subsection{Instalace na PC}	
 	Pokud aplikaci získáme ve formě souboru .zip, pak stačí tento soubor rozbalit do libovolného adresáře. Aplikace se sama nainstaluje a spustí poklepáním na soubor pruvodce.exe.
 	
 \subsection{Ovládání simulátoru}
-Pokud aplikace není spuštěna přes VR headset, ale na stolním PC, je možné ji ovládat za pomocí simulátoru. Následuje seznam základních ovládacích prvků tohoto simulátoru.\cite{VRTK}
+Pokud aplikace není spuštěna přes VR headset, ale na stolním PC, je možné ji ovládat za pomocí simulátoru.\cite{VRTK} Následuje seznam základních ovládacích prvků tohoto simulátoru. Všechny klávesové zkratky jsou také popsány v levém horním rohu aplikace samotné (obr. \ref{fig:simulator}).
 
 \subsubsection{Mód ovládání kamery}
 V tomto módu uživatel automaticky začíná. Je možné se v něm rozhlížet po okolí (ovládat pohled kamery simulující pohyby hlavy), ovšem není možné ovládat pohyby rukou. Klávesou levý Alt se pak může přepnout do módu ovládání pohybu rukou a zpět.
@@ -665,9 +697,12 @@ V tomto módu uživatel automaticky začíná. Je možné se v něm rozhlížet 
 	
 	\item \textbf{Chůze}
 	
-	Tlačítky W, A, S, D.
+	Tlačítky W, A, S, D.	
 	
 	
+	\item \textbf{Rychlá chůze}
+	
+	Levý Shift.
 	
 	\item \textbf{Hlavní menu}
 	
@@ -676,7 +711,7 @@ V tomto módu uživatel automaticky začíná. Je možné se v něm rozhlížet 
 \end{description}
 
 \subsubsection{Mód pohybů rukou}
-Simulátor zobrazuje ovladače v rukou uživatele jako červený a zelený bod, které jsou ve výchozím nastavení umístěny pod hlavní kamerou (z lidské anatomie pod úrovní hlavy), proto je dobré před prvním přepnutí do tohoto módu sklopit pohled kamery dolů. Přepínání mezi tímto módem a ovládáním kamery lze docílit stiskem klávesy levý Alt.
+Simulátor zobrazuje ovladače v rukou uživatele jako červený a zelený bod, které jsou ve výchozím nastavení umístěny pod hlavní kamerou (z lidské anatomie pod úrovní hlavy), proto je dobré před prvním přepnutí do tohoto módu sklopit pohled kamery dolů. Přepínání mezi tímto módem a ovládáním kamery lze docílit stiskem klávesy levý Alt. Pro ilustraci viz obr. \ref{fig:simulator}.
 
 \begin{description}
 
@@ -693,14 +728,20 @@ Simulátor zobrazuje ovladače v rukou uživatele jako červený a zelený bod, 
 
 \end{description}
 
+\begin{figure}
+  		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{screen2.png}
+  		\caption{Ovládání simulátoru}
+  		\label{fig:simulator}
+	\end{figure}
 
 
 
 
 \begin{conclusion}
 	   
-    Tato práce se zabývala vizualizací městské scenérie a je součástí týmového projektu Virtuální Historický Průvodce. Jejím výstupem je aplikace, která umožní uživatelům prozkoumávat středověká města za pomocí technologií virtuální reality. Jedná se o řešení, které umožní ukládat logickou strukturu města v databázi a díky tomu pak zobrazovat pouze ty budovy, které se nacházejí k uživateli nejblíže, čímž se jednoznačně zvýší její efektivita. Tohoto bylo úspěšně dosaženo, jak je možné zjistit z přiložených zdrojových kódu a spustitelných souborů v příloze.
-     V budoucnu bude pravděpodobně tato aplikace sloužit jako prototyp pro robustnější systém, který mimo jiné umožní také podporu smíšené reality, nasazení na Android a další možnosti.
+    Tato práce se zabývala vizualizací městské scenérie a je součástí týmového projektu Virtuální Historický Průvodce. Jejím výstupem byla aplikace, která umožňuje uživatelům prozkoumávat středověká města za pomocí technologií virtuální reality. Jedná se o řešení, které ukládá  logickou strukturu města v databázi a díky tomu pak zobrazuje pouze ty budovy, které se nacházejí k uživateli nejblíže, čímž se jednoznačně zvýší její efektivita. Uživatel výsledné aplikace bude s její pomocí přenesen na konkrétní lokaci v daném městě a kolem něj budou vygenerovány nejbližší domy s ohledem na dané počasí a denní dobu.  Tohoto bylo úspěšně dosaženo, jak je možné zjistit z přiložených zdrojových kódu a spustitelných souborů v příloze.
+    
+     V budoucnu bude tato aplikace sloužit jako prototyp pro robustnější systém, který mimo jiné umožní také podporu smíšené reality, nasazení na Android a další možnosti. Jedná se o projekt, který chce oslovit kromě běžných uživatelů také odborníky z pole humanitních věd, především historie, dějin umění, archivnictví a architektury. Díky jednoduchému a intuitivnímu uživatelskému rozhraní by tato aplikace mohla být nasazena i v těchto oborech, kde může přispět k vizualizaci starých měst. Došlo by tak k rychlým a efektivním vědeckým pokrokům díky užší spolupráci mezi humanitními a technickými obory.
 \end{conclusion}
 
 %\bibliographystyle{csn690}
@@ -710,17 +751,15 @@ Simulátor zobrazuje ovladače v rukou uživatele jako červený a zelený bod, 
 
 \bibitem{3DCityDB}
   \textsc{Chair of Geoinformatics, Technische Universität München},
-  3D City Database for CityGML Documentation version 3.3 [online],
-  in \url{https://3dcitydb.net}, 2016,
+  3D City Database for CityGML Documentation version 3.3 [online], 2016,
   [cit. 18. 4. 2018],
-  Dostupné z \url{https://github.com/3dcitydb/3dcitydb/blob/master/Documentation/3DCityDB_Documentation_v3.3.pdf}
+  dostupné z \url{https://github.com/3dcitydb/3dcitydb/blob/master/Documentation/3DCityDB_Documentation_v3.3.pdf}
   
 \bibitem{VSP}
   \textsc{Chromý P., Čižek J., Ghais K., Holub M., Mikeš S., Rajnoch J.},
-  Virtual Old Prague Project [online],
-  in \url{http://dcgi.fel.cvut.cz/cgg/vsp/}, 2011,
+  Virtual Old Prague Project [online], 2011,
   [cit. 18. 4. 2018],
-  Dostupné z \url{http://dcgi.fel.cvut.cz/cgg/vsp/about/doc.html}
+  dostupné z \url{http://dcgi.fel.cvut.cz/cgg/vsp/about/doc.html}
   
   
     \bibitem{tombs}
@@ -729,72 +768,81 @@ Simulátor zobrazuje ovladače v rukou uživatele jako červený a zelený bod, 
 solutions [online],
   Journal of Cultural Heritage, Volume 23, January–February 2017, Pages 40-48,
   [vid. 6. 5. 2018],
-  ISSN: 1296-2074
-  Dostupné z \url{https://doi.org/10.1016/j.culher.2016.09.003}
+  ISSN: 1296-2074,
+  dostupné z \url{https://doi.org/10.1016/j.culher.2016.09.003}
   
   
 \bibitem{swagger}
   \textsc{SmartBear Software},
-  Getting Started With SwaggerHub [online],
-  in \url{app.swaggerhub.com}, 2018,
+  Getting Started With SwaggerHub [online], 2018,
   [cit. 18. 4. 2018],
-  Dostupné z \url{https://app.swaggerhub.com/help/tutorials/getting-started}
+  dostupné z \url{https://app.swaggerhub.com/help/tutorials/getting-started}
   
   
   
 \bibitem{UnityVR}
   \textsc{Unity Technologies},
-  VR overview [online],
-  in \url{https://docs.unity3d.com}, 2018,
+  VR overview [online], 2018,
   [cit. 29. 4. 2018],
-  Dostupné z \url{https://docs.unity3d.com/Manual/VROverview.html}
+  dostupné z \url{https://docs.unity3d.com/Manual/VROverview.html}
   
 \bibitem{VRTK}
   \textsc{Virtual Reality Toolkit},
-  [Basics] Using the VR Simulator Prefab,
-  in \url{https://www.youtube.com} [video], květen 2017,
+  [Basics] Using the VR Simulator Prefab [video], květen 2017,
   [cit. 29. 4. 2018],
-  Dostupné z \url{https://www.youtube.com/watch?v=bxxGaJg75g4}
+  dostupné z \url{https://www.youtube.com/watch?v=bxxGaJg75g4}
   
   
 \bibitem{UnityJSON}
   \textsc{Unity Technologies},
-  JSON Serialization [online],
-  in \url{https://docs.unity3d.com}, 2018,
+  JSON Serialization [online], 2018,
   [cit. 29. 4. 2018],
-  Dostupné z \url{https://docs.unity3d.com/Manual/JSONSerialization.html}
+  dostupné z \url{https://docs.unity3d.com/Manual/JSONSerialization.html}
   
 \bibitem{stk}
   \textsc{Programmer},
-  Serialize and Deserialize Json and Json Array in Unity [online],
-  in \url{https://stackoverflow.com}, 2018,
+  Serialize and Deserialize Json and Json Array in Unity [online], 15. 2. 2017,
   [cit. 29. 4. 2018],
-  Dostupné z \url{https://stackoverflow.com/questions/36239705/serialize-and-deserialize-json-and-json-array-in-unity}
+  dostupné z \url{https://stackoverflow.com/questions/36239705/serialize-and-deserialize-json-and-json-array-in-unity}
  
 \bibitem{mono}
   \textsc{Mono Project},
-  FAQ: Security [online],
-  in \url{http://www.mono-project.com}, 2018,
+  FAQ: Security [online], 2018,
   [cit. 3. 5. 2018],
-  Dostupné z \url{http://www.mono-project.com/docs/faq/security/}
+  dostupné z \url{http://www.mono-project.com/docs/faq/security/}
   
   
 \bibitem{unityFAQ}
   \textsc{Nig},
-  How to validate SSL certificates when using HttpWebRequest [online],
-  in \url{https://answers.unity.com}, 2018,
+  How to validate SSL certificates when using HttpWebRequest [online], 17. 9. 2014,
   [cit. 3. 5. 2018],
-  Dostupné z \url{https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html}
+  dostupné z \url{https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html}
 
 
 \bibitem{VRTKlic}
   \textsc{TheStonefox},
-  The MIT License (MIT) [online],
-  in \url{https://github.com}, 2018,
+  The MIT License (MIT) [online], 2018,
   [cit. 5. 5. 2018],
-  Dostupné z \url{https://github.com/thestonefox/VRTK/blob/master/LICENSE.md}
+  dostupné z \url{https://github.com/thestonefox/VRTK/blob/master/LICENSE.md}
   
-    
+\bibitem{building}
+  \textsc{BryonSpeller},
+  Medieval House [online], 25. 4. 2014,
+  [cit. 8. 5. 2018],
+  dostupné z \url{https://www.turbosquid.com/FullPreview/Index.cfm/ID/809615}
+     
+  
+\bibitem{unityFAQtext}
+  \textsc{IMD},
+  Loading texture file from png/jpg file on disk [online], 4. 6. 2013,
+  [cit. 8. 5. 2018],
+  dostupné z \url{https://answers.unity.com/questions/432655/loading-texture-file-from-pngjpg-file-on-disk.html}
+   
+\bibitem{VRuse}
+  \textsc{Chloe Ng},
+  Lessons in Mobile VR Usability Testing [online], 31. 8. 2017,
+  [cit. 8. 5. 2018],
+  dostupné z \url{https://medium.com/fulldive/lessons-in-mobile-vr-usability-testing-85fe2fb3abd5} 
     
   
   
@@ -812,11 +860,15 @@ solutions [online],
 	\item[CLR] Common Language Runtime, runtime pro C\#
     \item[CityGML] Aplikační schéma pro reprezentaci GML
 	\item[COLLADA] Formát pro interaktivní 3D scény, XML schéma
+	\item[DL] Datová vrstva
+	\item[ER] Entitně vztahový model databáze
 	\item[FS] File System, souborový systém
 	\item[GML] Geography Markup Language, geografický značkovací jazyk
 	\item[GUI] Graphical user interface, grafické uživatelské rozhraní
 	\item[HMD] Head-mounted display, neboli headset, VR brýle
-    \item[JRE] Java runtime environment, rozhraní pro Java aplikace
+	\item[HK] Hradec Králové, projekt na téma vizualizace věnných měst
+    \item[JRE] Java Runtime Environment, rozhraní pro Java aplikace
+    \item[JSON] Javascriptový objektový zápis, běžný formát pro přenos dat
 	\item[LoD] Level of Detail, úroveň detailu grafických modelů
 	\item[KML] Keyhole Markup Language, XML vyvinuté pro google earth
     \item[.NET] Knihovna spojená s jazykem C\#
@@ -827,9 +879,11 @@ solutions [online],
 	\item[REST] Representational state transfer, architektura rozhraní
 	\item[RDBMS] Systém pro správu relačních databází
 	\item[SDK] Software development kit, sada vývojových nástrojů 
+	\item[SP2] Softwarový týmový projekt 2, předmět na FIT ČVUT
 	\item[VR] Virtual reality, virtuální realita
     \item[WebGL] Javascriptové API pro zobrazování 3D grafiky
     \item[UI] Uživatelské rozhraní
+    \item[UCD] User Centred Design, návrh z hlediska uživatele
     \item[VRML] Formát pro popis 3D scén a virtuální reality
     \item[VRTK] Sada skriptů pro vývoj VR aplikací v Unity 3D
 	\item[XML] Extensible markup language, rozšiřitelný značkovací jazyk
