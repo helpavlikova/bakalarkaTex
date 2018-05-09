@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  9 MAY 2018 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  9 MAY 2018 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,7 +812,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<cvut-logo-bw.pdf, id=295, 554.07pt x 193.29715pt>
+<cvut-logo-bw.pdf, id=299, 554.07pt x 193.29715pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
 <use cvut-logo-bw.pdf>
 Package pdftex.def Info: cvut-logo-bw.pdf  used on input line 44.
@@ -883,17 +883,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] [10]) [11] [12
 
 ]
-(./BP_Pavlíková_Helena_2018.tex.lof
-
-LaTeX Warning: Citation `tombs' on page xiii undefined on input line 9.
-
-
-LaTeX Warning: Citation `cernyVit' on page xiii undefined on input line 13.
-
-
-LaTeX Warning: Citation `building' on page xiii undefined on input line 17.
-
-) [13] [14
+(./BP_Pavlíková_Helena_2018.tex.lof) [13] [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
@@ -912,76 +902,34 @@ l.55 \chapter
 
 ] [3] [4
 
-]
-
-LaTeX Warning: Citation `3DCityDB' on page 5 undefined on input line 70.
-
-
-LaTeX Warning: Citation `3DCityDB' on page 5 undefined on input line 75.
-
-[5]
-
-LaTeX Warning: Citation `3DCityDB' on page 6 undefined on input line 79.
-
-<3dcitydb.png, id=487, 658.71094pt x 502.12593pt>
+] [5]
+<3dcitydb.png, id=503, 658.71094pt x 502.12593pt>
 File: 3dcitydb.png Graphic file (type png)
 <use 3dcitydb.png>
 Package pdftex.def Info: 3dcitydb.png  used on input line 82.
 (pdftex.def)             Requested size: 369.00627pt x 281.28821pt.
-[6 <./3dcitydb.png>]
-
-LaTeX Warning: Citation `VSP' on page 7 undefined on input line 93.
-
-
-LaTeX Warning: Citation `VSP' on page 7 undefined on input line 97.
-
-
-LaTeX Warning: Citation `VSP' on page 7 undefined on input line 101.
-
-<vsp2.png, id=495, 352.31625pt x 275.52937pt>
+ [6 <./3dcitydb.png>]
+<vsp2.png, id=513, 352.31625pt x 275.52937pt>
 File: vsp2.png Graphic file (type png)
 <use vsp2.png>
 Package pdftex.def Info: vsp2.png  used on input line 107.
 (pdftex.def)             Requested size: 352.31538pt x 275.52869pt.
-<vsp.png, id=496, 343.2825pt x 270.25969pt>
+<vsp.png, id=514, 343.2825pt x 270.25969pt>
 File: vsp.png Graphic file (type png)
 <use vsp.png>
 Package pdftex.def Info: vsp.png  used on input line 114.
 (pdftex.def)             Requested size: 343.28165pt x 270.25902pt.
-[7]
-
-LaTeX Warning: Citation `tombs' on page 8 undefined on input line 131.
-
-<tomb.jpg, id=502, 493.89317pt x 397.485pt>
+ [7]
+<tomb.jpg, id=522, 493.89317pt x 397.485pt>
 File: tomb.jpg Graphic file (type jpg)
 <use tomb.jpg>
 Package pdftex.def Info: tomb.jpg  used on input line 134.
 (pdftex.def)             Requested size: 493.89197pt x 397.48402pt.
 
-LaTeX Warning: Citation `tombs' on page 8 undefined on input line 135.
-
-
-LaTeX Warning: Citation `tombs' on page 8 undefined on input line 135.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./vsp2.png>] [9 <./vsp.png>] [10 <./tomb.jpg>]
-
-LaTeX Warning: Citation `UnityVR' on page 11 undefined on input line 161.
-
-[11]
-
-LaTeX Warning: Citation `UnityVR' on page 12 undefined on input line 169.
-
-
-LaTeX Warning: Citation `VRTKlic' on page 12 undefined on input line 173.
-
-
-LaTeX Warning: Citation `VRTK' on page 12 undefined on input line 176.
-
-[12]
-<VRTKsetup.png, id=526, 457.71pt x 673.01437pt>
+ [8 <./vsp2.png>] [9 <./vsp.png>] [10 <./tomb.jpg>] [11] [12]
+<VRTKsetup.png, id=555, 457.71pt x 673.01437pt>
 File: VRTKsetup.png Graphic file (type png)
 <use VRTKsetup.png>
 Package pdftex.def Info: VRTKsetup.png  used on input line 187.
@@ -994,17 +942,10 @@ Overfull \hbox (88.7089pt too wide) in paragraph at lines 187--188
 
 LaTeX Warning: Float too large for page by 104.41248pt on input line 190.
 
-
-LaTeX Warning: Citation `mono' on page 13 undefined on input line 210.
-
-[13] [14 <./VRTKsetup.png>]
-
-LaTeX Warning: Citation `swagger' on page 15 undefined on input line 218.
-
-[15] [16
+[13] [14 <./VRTKsetup.png>] [15] [16
 
 ]
-<appArch.pdf, id=545, 315.66835pt x 484.58742pt>
+<appArch.pdf, id=578, 315.66835pt x 484.58742pt>
 File: appArch.pdf Graphic file (type pdf)
 <use appArch.pdf>
 Package pdftex.def Info: appArch.pdf  used on input line 231.
@@ -1014,20 +955,13 @@ Package pdftex.def Info: appArch.pdf  used on input line 231.
 LaTeX Warning: Float too large for page by 0.00586pt on input line 234.
 
 [17] [18 <./appArch.pdf>]
-<ERmodel.png, id=651, 758.835pt x 138.5175pt>
+<ERmodel.png, id=684, 758.835pt x 138.5175pt>
 File: ERmodel.png Graphic file (type png)
 <use ERmodel.png>
 Package pdftex.def Info: ERmodel.png  used on input line 257.
 (pdftex.def)             Requested size: 595.81416pt x 108.75972pt.
-
-
-LaTeX Warning: Citation `cernyVit' on page 19 undefined on input line 258.
-
-
-LaTeX Warning: Citation `cernyVit' on page 19 undefined on input line 258.
-
-[19] [20 <./ERmodel.png>] [21]
-<UCdiagram.png, id=672, 404.26031pt x 324.46219pt>
+ [19] [20 <./ERmodel.png>] [21]
+<UCdiagram.png, id=708, 404.26031pt x 324.46219pt>
 File: UCdiagram.png Graphic file (type png)
 <use UCdiagram.png>
 Package pdftex.def Info: UCdiagram.png  used on input line 354.
@@ -1049,7 +983,7 @@ Overfull \hbox (5.73126pt too wide) in paragraph at lines 392--393
 -
  []
 
-<api.png, id=697, 267.24844pt x 505.13719pt>
+<api.png, id=732, 267.24844pt x 505.13719pt>
 File: api.png Graphic file (type png)
 <use api.png>
 Package pdftex.def Info: api.png  used on input line 416.
@@ -1068,46 +1002,23 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 439.
- [27]
-
-LaTeX Warning: Citation `UnityJSON' on page 28 undefined on input line 480.
-
-
-LaTeX Warning: Citation `UnityJSON' on page 28 undefined on input line 482.
-
-[28]
+ [27] [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-
-LaTeX Warning: Citation `mono' on page 30 undefined on input line 529.
-
-
-LaTeX Warning: Citation `unityFAQ' on page 30 undefined on input line 529.
-
 [30] [31]
-<screen1.png, id=867, 776.14969pt x 599.23875pt>
+<screen1.png, id=909, 776.14969pt x 599.23875pt>
 File: screen1.png Graphic file (type png)
 <use screen1.png>
 Package pdftex.def Info: screen1.png  used on input line 598.
 (pdftex.def)             Requested size: 369.00655pt x 284.89738pt.
-
-
-LaTeX Warning: Citation `building' on page 32 undefined on input line 599.
-
-
-LaTeX Warning: Citation `building' on page 32 undefined on input line 599.
-
-
-LaTeX Warning: Citation `unityFAQtext' on page 32 undefined on input line 606.
-
-[32 <./screen1.png>] [33]
-<MockMisto.png, id=902, 701.62125pt x 481.8pt>
+ [32 <./screen1.png>] [33]
+<MockMisto.png, id=947, 701.62125pt x 481.8pt>
 File: MockMisto.png Graphic file (type png)
 <use MockMisto.png>
 Package pdftex.def Info: MockMisto.png  used on input line 663.
 (pdftex.def)             Requested size: 369.00972pt x 253.39723pt.
-<MockPocasi.png, id=904, 701.62125pt x 437.635pt>
+<MockPocasi.png, id=949, 701.62125pt x 437.635pt>
 File: MockPocasi.png Graphic file (type png)
 <use MockPocasi.png>
 Package pdftex.def Info: MockPocasi.png  used on input line 672.
@@ -1119,24 +1030,17 @@ tect Mode), bude umoº-
  []
 
 [34] [35 <./MockMisto.png> <./MockPocasi.png>]
-<ArchitectMock.png, id=916, 524.96124pt x 513.92pt>
+<ArchitectMock.png, id=961, 524.96124pt x 513.92pt>
 File: ArchitectMock.png Graphic file (type png)
 <use ArchitectMock.png>
 Package pdftex.def Info: ArchitectMock.png  used on input line 681.
 (pdftex.def)             Requested size: 369.00833pt x 361.24716pt.
  [36 <./ArchitectMock.png>]
-
-LaTeX Warning: Citation `VRuse' on page 37 undefined on input line 700.
-
-
 Underfull \vbox (badness 4634) has occurred while \output is active []
 
  [37]
-
-LaTeX Warning: Citation `VRTK' on page 38 undefined on input line 714.
-
 [38]
-<screen2.png, id=935, 959.08313pt x 606.01407pt>
+<screen2.png, id=983, 959.08313pt x 606.01407pt>
 File: screen2.png Graphic file (type png)
 <use screen2.png>
 Package pdftex.def Info: screen2.png  used on input line 769.
@@ -1192,7 +1096,7 @@ tificates -[] when -[]
 ] [48
 
 ]
-<scenar.pdf, id=1021, 614.295pt x 794.97pt>
+<scenar.pdf, id=1054, 614.295pt x 794.97pt>
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf>
 Package pdftex.def Info: scenar.pdf  used on input line 851.
@@ -1201,7 +1105,7 @@ File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf>
 Package pdftex.def Info: scenar.pdf  used on input line 851.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<scenar.pdf, id=1024, page=1, 614.295pt x 794.97pt>
+<scenar.pdf, id=1057, page=1, 614.295pt x 794.97pt>
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf, page 1>
 Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
@@ -1224,7 +1128,7 @@ File: scenar.pdf Graphic file (type pdf)
 Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [50 <./scenar.pdf>]
-<dotaznik.pdf, id=1048, 614.295pt x 794.97pt>
+<dotaznik.pdf, id=1081, 614.295pt x 794.97pt>
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf>
 Package pdftex.def Info: dotaznik.pdf  used on input line 854.
@@ -1233,7 +1137,7 @@ File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf>
 Package pdftex.def Info: dotaznik.pdf  used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<dotaznik.pdf, id=1051, page=1, 614.295pt x 794.97pt>
+<dotaznik.pdf, id=1084, page=1, 614.295pt x 794.97pt>
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
 Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
@@ -1270,32 +1174,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 858.
 (./BP_Pavlíková_Helena_2018.tex.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 858.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 858.
+Package rerunfilecheck Info: File `BP_Pavlíková_Helena_2018.tex.out' has not ch
+anged.
+(rerunfilecheck)             Checksum: 30630110A5319F93902FE13BA0BDDFFF;10945.
 
-
-Package rerunfilecheck Warning: File `BP_Pavlíková_Helena_2018.tex.out' has cha
-nged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `BP_Pavlíková_Helena_2018.tex.out':
-(rerunfilecheck)             Before: CA7F6137E9C9162C379E3E50DA952319;10850
-(rerunfilecheck)             After:  30630110A5319F93902FE13BA0BDDFFF;10945.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 858.
  ) 
 Here is how much of TeX's memory you used:
- 17397 strings out of 492649
- 242888 string characters out of 6133385
+ 17398 strings out of 492649
+ 242900 string characters out of 6133385
  435264 words of memory out of 5000000
- 20737 multiletter control sequences out of 15000+600000
+ 20738 multiletter control sequences out of 15000+600000
  69936 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,49p,1112b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1316,10 +1208,10 @@ fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
 /lm/lmtk10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on BP_Pavlíková_Helena_2018.tex.pdf (68 pages, 6849999 bytes).
+Output written on BP_Pavlíková_Helena_2018.tex.pdf (68 pages, 6850539 bytes).
 PDF statistics:
- 1209 PDF objects out of 1440 (max. 8388607)
- 1075 compressed objects within 11 object streams
+ 1243 PDF objects out of 1440 (max. 8388607)
+ 1105 compressed objects within 12 object streams
  340 named destinations out of 1000 (max. 500000)
- 676 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 684 words of extra memory for PDF output out of 10000 (max. 10000000)
 
