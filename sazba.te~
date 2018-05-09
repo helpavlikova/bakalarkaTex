@@ -1,0 +1,83 @@
+\documentclass[a4paper]{article}
+\usepackage{polyglossia} %cizi jazyky
+\usepackage{csquotes} %uvozovky
+\usepackage{xevlna} %tím pádem se nebudou trhat jednoslovné předložky
+\usepackage{metalogo} %logo xelatexu
+
+
+
+\setmainlanguage{czech}
+
+\title{Sazba v~BI-DPR}
+\author{Helena Pavlíková}
+
+\begin{document}
+
+    \maketitle
+    
+	Ahoj, světe!
+	
+	\tableofcontents
+	
+	\section{Členění textu}
+	
+	\subsection[Kapitoly]{Kapitoly, sekce, podsekce a jak je používat}
+	
+	Text se člení\dots{}
+	Každý druh má něco a čísla a taky něco
+	
+	\subsection{Odstavce}\label{odstavce}
+	
+	Text --- zejména ten odborný --- je nutné členit. Mohu-li být\dots{} BI-DPR. 
+	Praha-Smíchov.
+	Každý odstavec by měl\dots{}
+	
+	Odstavce jsou oddělené.
+	Dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text dlouhý text.
+	
+	Odstavce něco o~něčem. Bývají \enquote{do bloku}. Velikost je 0,25--0,33~čtverčíku.
+	
+	\section{Seznamy}
+	
+	\subsection{Oddělování odstavců}
+	
+	Dva druhy oddělování odstavců:
+	
+	\begin{description}
+	    \item[vertikální mezera] Dva odstavce se oddělí vertikální mezerou.
+	    \item[odsazení] První řádek odstavce je odsazený.
+	    \begin{itemize}
+	        \item Často ne u~prvního odstavce.
+	    \end{itemize}
+	\end{description}
+	
+	\subsection{Jak vytvořit dokument v~{\XeLaTeX}u}
+	
+	Dělá se to takhle:
+	\begin{enumerate}
+	    \item Napiš zdroják.
+	    \item Zkompiluj ho.
+	    \item Profit!
+	\end{enumerate}
+	
+	
+	\section{Tabulky}
+	
+	V~tabulce~\ref{body} na straně~\pageref{body} najdete počty bodů z~BI-DPR. O~odstavcích už jsme mluvili v~části~\ref{odstavce}.
+	
+	\begin{table}[h!t] %here nebo top, výchozí je top
+	    \caption[Body z~BI-DPR]{Bodované činnosti z~BI-DPR}\label{body}
+	    \begin{center}
+    	    \begin{tabular}{p{3.5cm}|r|c}
+    	        činnost & body & povinná\\ \hline \hline
+    	        test citace & 10 & ne\\ \hline
+    	        obhajoba poziční zprávy & 60 & ano\\
+    	    \end{tabular}
+	    \end{center}
+	\end{table}
+	
+	
+	
+	
+	
+\end{document}

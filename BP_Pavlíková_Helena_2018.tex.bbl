@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\biburl}[1]{\url{#1}}
 \providecommand{\urlprefix}{Dostupn{\' e} z: }
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,70 @@
 \providecommand{\eprint}[2][]{\biburl{#2}}
 
 \bibitem{3DCityDB}
-\emph{3}.
+Chair of Geoinformatics, Technische Universität München: \emph{3D City
+  Database for CityGML Documentation version 3.3 {[online]}}. [cit.
+  2018-04-18].
+\urlprefix\biburl{https://github.com/3dcitydb/3dcitydb/blob/master/Documentation/3DCityDB_Documentation_v3.3.pdf}
+
+\bibitem{VSP}
+Chromý P., Čižek J., Ghais K., Holub M., Mikeš S., Rajnoch J.:
+  \emph{Virtual Old Prague Project {[online]}}. [cit. 2018-04-18].
+\urlprefix\biburl{http://dcgi.fel.cvut.cz/cgg/vsp/about/doc.html}
+
+\bibitem{tombs}
+Fernández-Palacios B.~J., R.~F., Morabito~D.: Access to complex reality-based
+  3D models using virtual reality solutions. \emph{Journal of Cultural
+  Heritage, Volume 23}, leden 2017, [cit. 2018-05-06].
+\urlprefix\biburl{https://doi.org/10.1016/j.culher.2016.09.003}
+
+\bibitem{UnityVR}
+Unity Technologies: \emph{VR overview {[online]}}. [cit. 2018-04-29].
+\urlprefix\biburl{https://docs.unity3d.com/Manual/VROverview.html}
+
+\bibitem{VRTKlic}
+TheStonefox: \emph{The MIT License (MIT) {[online]}}. [cit. 2018-05-05].
+\urlprefix\biburl{https://github.com/thestonefox/VRTK/blob/master/LICENSE.md}
+
+\bibitem{VRTK}
+Virtual Reality Toolkit: \emph{[Basics] Using the VR Simulator Prefab
+  {[video]}}. [cit. 2018-04-29].
+\urlprefix\biburl{https://www.youtube.com/watch?v=bxxGaJg75g4}
+
+\bibitem{mono}
+Mono Project: \emph{FAQ: Security {[online]}}. [cit. 2018-05-03].
+\urlprefix\biburl{http://www.mono-project.com/docs/faq/security/}
+
+\bibitem{swagger}
+SmartBear Software: \emph{Getting Started With SwaggerHub {[online]}}. [cit.
+  2018-04-18].
+\urlprefix\biburl{https://app.swaggerhub.com/help/tutorials/getting-started}
+
+\bibitem{cernyVit}
+Černý V.: \emph{Virtuální historický průvodce - jádro, bakalářská
+  práce}. České vysoké učení technické v Praze, Fakulta informačních
+  technologií, 2018.
+
+\bibitem{UnityJSON}
+Virtual Reality Toolkit: \emph{[Basics] Using the VR Simulator Prefab
+  {[online]}}. [cit. 2018-04-29].
+\urlprefix\biburl{https://www.youtube.com/watch?v=bxxGaJg75g4}
+
+\bibitem{unityFAQ}
+Nig: \emph{How to validate SSL certificates when using HttpWebRequest
+  {[online]}}. [cit. 2018-05-05].
+\urlprefix\biburl{https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html}
+
+\bibitem{building}
+BryonSpeller: \emph{Medieval House {[online]}}. [cit. 2018-05-08].
+\urlprefix\biburl{https://www.turbosquid.com/FullPreview/Index.cfm/ID/809615}
+
+\bibitem{unityFAQtext}
+IMD: \emph{Loading texture file from png/jpg file on disk {[online]}}. [cit.
+  2018-05-08].
+\urlprefix\biburl{https://answers.unity.com/questions/432655/loading-texture-file-from-pngjpg-file-on-disk.html}
+
+\bibitem{VRuse}
+Ng, C.: \emph{Lessons in Mobile VR Usability Testing}. [cit. 2018-05-08].
+\urlprefix\biburl{https://medium.com/fulldive/lessons-in-mobile-vr-usability-testing-85fe2fb3abd5}
 
 \end{thebibliography}

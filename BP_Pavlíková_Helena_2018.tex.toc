@@ -19,8 +19,8 @@
 \contentsline {subsection}{\numberline {2.1.4}Shrnut\IeC {\'\i }}{9}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Anal\IeC {\'y}za pou\IeC {\v z}it\IeC {\'y}ch technologi\IeC {\'\i }}{11}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Unity}{11}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}XR v Unity}{11}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Nastaven\IeC {\'\i } podpory pro VR v Unity}{11}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.1}XR v~Unity}{11}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Nastaven\IeC {\'\i } podpory pro VR v~Unity}{11}{subsubsection.2.2.1.2}
 \contentsline {subsection}{\numberline {2.2.2}Virtual Reality Toolkit}{12}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Simul\IeC {\'a}tor VRTK}{12}{subsubsection.2.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2.2}Ovlada\IeC {\v c}e pohybu}{12}{subsubsection.2.2.2.2}
@@ -39,34 +39,35 @@
 \contentsline {subsection}{\numberline {3.2.1}Funk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{19}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Nefunk\IeC {\v c}n\IeC {\'\i } po\IeC {\v z}adavky}{21}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}P\IeC {\v r}\IeC {\'\i }pady u\IeC {\v z}it\IeC {\'\i }}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}N\IeC {\'a}vrh pou\IeC {\v z}it\IeC {\'e}ho API}{22}{section.3.4}
+\contentsline {section}{\numberline {3.4}N\IeC {\'a}vrh pou\IeC {\v z}it\IeC {\'e}ho API}{23}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Polo\IeC {\v z}ky API}{23}{subsection.3.4.1}
 \contentsline {chapter}{\chapternumberline {4}Implementace}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Napojen\IeC {\'\i } na datov\IeC {\'e} \IeC {\'u}lo\IeC {\v z}i\IeC {\v s}t\IeC {\v e}}{27}{section.4.1}
-\contentsline {subsubsection}{\numberline {4.1.0.1}P\IeC {\v r}\IeC {\'\i }m\IeC {\'e} propojen\IeC {\'\i } s datab\IeC {\'a}z\IeC {\'\i }}{27}{subsubsection.4.1.0.1}
-\contentsline {subsubsection}{\numberline {4.1.0.2}JSON v Unity}{28}{subsubsection.4.1.0.2}
-\contentsline {subsubsection}{\numberline {4.1.0.3}Mono a HTTPS}{29}{subsubsection.4.1.0.3}
-\contentsline {section}{\numberline {4.2}Vykreslen\IeC {\'\i } v Unity}{30}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Textury}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}StreamingAssets}{31}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Grafick\IeC {\'e} u\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i }}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Pou\IeC {\v z}itelnost GUI pro VR}{32}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Prvotn\IeC {\'\i } n\IeC {\'a}vrh}{33}{subsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Celkov\IeC {\'y} koncept}{33}{subsubsection.4.3.2.1}
-\contentsline {subsubsection}{\numberline {4.3.2.2}V\IeC {\'y}b\IeC {\v e}r lokality}{33}{subsubsection.4.3.2.2}
-\contentsline {subsubsection}{\numberline {4.3.2.3}V\IeC {\'y}b\IeC {\v e}r po\IeC {\v c}as\IeC {\'\i }}{33}{subsubsection.4.3.2.3}
-\contentsline {subsubsection}{\numberline {4.3.2.4}Administr\IeC {\'a}torsk\IeC {\'y} re\IeC {\v z}im}{33}{subsubsection.4.3.2.4}
-\contentsline {section}{\numberline {4.4}U\IeC {\v z}ivatelsk\IeC {\'e} testov\IeC {\'a}n\IeC {\'\i }}{35}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Specifika testov\IeC {\'a}n\IeC {\'\i } VR aplikac\IeC {\'\i }}{36}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Pr\IeC {\r u}b\IeC {\v e}h testov\IeC {\'a}n\IeC {\'\i } aplikace}{36}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{36}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Instalace na PC}{36}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } simul\IeC {\'a}toru}{37}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}M\IeC {\'o}d ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } kamery}{37}{subsubsection.4.5.2.1}
-\contentsline {subsubsection}{\numberline {4.5.2.2}M\IeC {\'o}d pohyb\IeC {\r u} rukou}{37}{subsubsection.4.5.2.2}
-\contentsline {chapter}{Z{\' a}v{\v e}r}{39}{chapter*.6}
-\contentsline {chapter}{Literatura}{41}{chapter*.7}
-\contentsline {appendix}{\chapternumberline {A}Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek}{43}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho USB}{45}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r} u\IeC {\v z}ivatelsk\IeC {\'e}ho testov\IeC {\'a}n\IeC {\'\i }}{47}{appendix.C}
-\contentsline {appendix}{\chapternumberline {D}Dotazn\IeC {\'\i }k pro u\IeC {\v z}ivatelsk\IeC {\'e} testov\IeC {\'a}n\IeC {\'\i }}{49}{appendix.D}
+\contentsline {subsubsection}{\numberline {4.1.0.1}P\IeC {\v r}\IeC {\'\i }m\IeC {\'e} propojen\IeC {\'\i } s~datab\IeC {\'a}z\IeC {\'\i }}{27}{subsubsection.4.1.0.1}
+\contentsline {subsubsection}{\numberline {4.1.0.2}JSON v~Unity}{28}{subsubsection.4.1.0.2}
+\contentsline {subsubsection}{\numberline {4.1.0.3}Mono a HTTPS}{30}{subsubsection.4.1.0.3}
+\contentsline {subsection}{\numberline {4.1.1}HTTP propojen\IeC {\'\i } s API}{31}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Vykreslen\IeC {\'\i } v~Unity}{31}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Textury}{32}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}StreamingAssets}{33}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Grafick\IeC {\'e} u\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i }}{33}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Pou\IeC {\v z}itelnost GUI pro VR}{34}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Prvotn\IeC {\'\i } n\IeC {\'a}vrh}{34}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Celkov\IeC {\'y} koncept}{34}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}V\IeC {\'y}b\IeC {\v e}r lokality}{34}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}V\IeC {\'y}b\IeC {\v e}r po\IeC {\v c}as\IeC {\'\i }}{34}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}Administr\IeC {\'a}torsk\IeC {\'y} re\IeC {\v z}im}{36}{subsubsection.4.3.2.4}
+\contentsline {section}{\numberline {4.4}U\IeC {\v z}ivatelsk\IeC {\'e} testov\IeC {\'a}n\IeC {\'\i }}{36}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Specifika testov\IeC {\'a}n\IeC {\'\i } VR aplikac\IeC {\'\i }}{37}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Pr\IeC {\r u}b\IeC {\v e}h testov\IeC {\'a}n\IeC {\'\i } aplikace}{37}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}U\IeC {\v z}ivatelsk\IeC {\'a} p\IeC {\v r}\IeC {\'\i }ru\IeC {\v c}ka}{38}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Instalace na PC}{38}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } simul\IeC {\'a}toru}{38}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}M\IeC {\'o}d ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } kamery}{38}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.2.2}M\IeC {\'o}d pohyb\IeC {\r u} rukou}{39}{subsubsection.4.5.2.2}
+\contentsline {chapter}{Z{\' a}v{\v e}r}{41}{chapter*.6}
+\contentsline {chapter}{Literatura}{43}{chapter*.7}
+\contentsline {appendix}{\chapternumberline {A}Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek}{45}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho USB}{47}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Sc\IeC {\'e}n\IeC {\'a}\IeC {\v r} u\IeC {\v z}ivatelsk\IeC {\'e}ho testov\IeC {\'a}n\IeC {\'\i }}{49}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Dotazn\IeC {\'\i }k pro u\IeC {\v z}ivatelsk\IeC {\'e} testov\IeC {\'a}n\IeC {\'\i }}{51}{appendix.D}

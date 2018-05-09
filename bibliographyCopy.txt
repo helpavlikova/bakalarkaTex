@@ -1,0 +1,108 @@
+\begin{thebibliography}{999}
+
+\bibitem{3DCityDB}
+  \textsc{Chair of Geoinformatics, Technische Universität München},
+  3D City Database for CityGML Documentation version 3.3 [online], 2016,
+  [cit. 18. 4. 2018],
+  dostupné z~\url{https://github.com/3dcitydb/3dcitydb/blob/master/Documentation/3DCityDB_Documentation_v3.3.pdf}
+  
+\bibitem{VSP}
+  \textsc{Chromý P., Čižek J., Ghais K., Holub M., Mikeš S., Rajnoch J.},
+  Virtual Old Prague Project [online], 2011,
+  [cit. 18. 4. 2018],
+  dostupné z~\url{http://dcgi.fel.cvut.cz/cgg/vsp/about/doc.html}
+  
+  
+    \bibitem{tombs}
+  \textsc{Fernández-Palacios B. J., Morabito D., Remondino F.},
+  Access to complex reality-based 3D models using virtual reality
+solutions [online],
+  Journal of Cultural Heritage, Volume 23, January–February 2017, Pages 40-48,
+  [vid. 6. 5. 2018],
+  ISSN: 1296-2074,
+  dostupné z~\url{https://doi.org/10.1016/j.culher.2016.09.003}
+  
+  
+\bibitem{swagger}
+  \textsc{SmartBear Software},
+  Getting Started With SwaggerHub [online], 2018,
+  [cit. 18. 4. 2018],
+  dostupné z~\url{https://app.swaggerhub.com/help/tutorials/getting-started}
+  
+  
+  
+\bibitem{UnityVR}
+  \textsc{Unity Technologies},
+  VR overview [online], 2018,
+  [cit. 29. 4. 2018],
+  dostupné z~\url{https://docs.unity3d.com/Manual/VROverview.html}
+  
+\bibitem{VRTK}
+  \textsc{Virtual Reality Toolkit},
+  [Basics] Using the VR Simulator Prefab [video], květen 2017,
+  [cit. 29. 4. 2018],
+  dostupné z~\url{https://www.youtube.com/watch?v=bxxGaJg75g4}
+  
+  
+    \bibitem{cernyVit}
+  \textsc{Červný V.},
+  Virtuální historický průvodce - jádro,
+  Praha 2018, Bakalářská práce,
+  České vysoké učení technické v Praze,
+  Fakulta informačních technologií
+  
+  
+\bibitem{UnityJSON}
+  \textsc{Unity Technologies},
+  JSON Serialization [online], 2018,
+  [cit. 29. 4. 2018],
+  dostupné z~\url{https://docs.unity3d.com/Manual/JSONSerialization.html}
+  
+\bibitem{stk}
+  \textsc{Programmer},
+  Serialize and Deserialize Json and Json Array in Unity [online], 15. 2. 2017,
+  [cit. 29. 4. 2018],
+  dostupné z~\url{https://stackoverflow.com/questions/36239705/serialize-and-deserialize-json-and-json-array-in-unity}
+ 
+\bibitem{mono}
+  \textsc{Mono Project},
+  FAQ: Security [online], 2018,
+  [cit. 3. 5. 2018],
+  dostupné z~\url{http://www.mono-project.com/docs/faq/security/}
+  
+  
+\bibitem{unityFAQ}
+  \textsc{Nig},
+  How to validate SSL certificates when using HttpWebRequest [online], 17. 9. 2014,
+  [cit. 3. 5. 2018],
+  dostupné z~\url{https://answers.unity.com/questions/792342/how-to-validate-ssl-certificates-when-using-httpwe.html}
+
+
+\bibitem{VRTKlic}
+  \textsc{TheStonefox},
+  The MIT License (MIT) [online], 2018,
+  [cit. 5. 5. 2018],
+  dostupné z~\url{https://github.com/thestonefox/VRTK/blob/master/LICENSE.md}
+  
+\bibitem{building}
+  \textsc{BryonSpeller},
+  Medieval House [online], 25. 4. 2014,
+  [cit. 8. 5. 2018],
+  dostupné z~\url{https://www.turbosquid.com/FullPreview/Index.cfm/ID/809615}
+     
+  
+\bibitem{unityFAQtext}
+  \textsc{IMD},
+  Loading texture file from png/jpg file on disk [online], 4. 6. 2013,
+  [cit. 8. 5. 2018],
+  dostupné z~\url{https://answers.unity.com/questions/432655/loading-texture-file-from-pngjpg-file-on-disk.html}
+   
+\bibitem{VRuse}
+  \textsc{Chloe Ng},
+  Lessons in Mobile VR Usability Testing [online], 31. 8. 2017,
+  [cit. 8. 5. 2018],
+  dostupné z~\url{https://medium.com/fulldive/lessons-in-mobile-vr-usability-testing-85fe2fb3abd5} 
+    
+  
+  
+\end{thebibliography}  

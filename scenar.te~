@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc} % LaTeX source encoded as UTF-8
+\usepackage[margin=3cm]{geometry}
+\usepackage{tikz}
+
+
+\title{Scénář k~testování uživatelského rozhraní aplikace virtuální průvodce}
+\date{}
+\begin{document}
+\maketitle	
+	\begin{enumerate}
+		\item Moderátor uživateli nasadí VR headset. Ujistí se, že uživateli dobře sedí a vysvětlí mu ovládání ovladačů.
+		\item Moderátor se ujistí, že uživatel vidí základní menu a vyzve ho, ať si vše pečlivě prohlédne.
+		\item Dále moderátor uživatele vyzve, aby zkusil vybrat lokalitu z~dané nabídky. Pokud se uživatel zrovna dívá na obrazovku s~výběrem počasí, vyzve ho, ať otočí hlavou a najde obrazovku s~výběrem lokality. 
+		\item Moderátor sleduje, jak uživatel interaguje s~nabídkou. V~ideálním případě uživatel sám ovladačem vybere nějakou lokalitu z~menu vpravo. Pokud se mu to dlouho nedaří, moderátor mu připomene, které tlačítko na ovladači stisknout. Moderátor také sleduje, zda uživatele samotného napadne potvrdit svou volbu tlačítkem OK, nebo zda očekává další instrukce.
+		\item Uživatel by nyní měl být přenesen na danou lokalitu ve městě. Moderátor jej chvíli nechá, ať se uživatel sám porozhlédne. Přitom moderátor sleduje, zda se nevyskytují nějaké problémy (dezorientace apod.).
+		\item Moderátor vysvětlí uživateli, že může s~domy interagovat a vyzve jej, aby to zkusil. Namířením ovladače na dům a následný stisk tlačítka by mělo vyvolat modální okno s~informacemi. Moderátor nechá uživatele si popisek domu přečíst a znovu sleduje, zda vše probíhá v~pořádku. Pak uživatele vyzve, aby okno s~popiskem znovu zavřel.
+		\item Moderátor vysvětlí uživateli, že v~aplikaci je možné také měnit počasí a denní dobu. Poprosí tedy uživatele, aby stiskl na ovladači příslušné tlačítko, které jej vrátí do hlavního menu a zkusí změnit nastavení scény na noc.
+		\item Moderátor sleduje, zad se uživatel příliš neztrácí v~ostatních možnostech, které aplikace nabízí a jak dlouho mu trvá změnit nastavení. Poté, co se uživateli povede změnit nastavení na noční scénu, poděkuje mu za spolupráci a poprosí jej o~vyplnění přiloženého dotazníku.
+	\end{enumerate}
+	
+\thispagestyle{empty}
+\begin{figure}
+\centering
+  		\includegraphics[width=10cm,keepaspectratio]{cvut-logo-bw.pdf}
+\end{figure}
+\end{document}

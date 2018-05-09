@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  9 MAY 2018 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.5)  9 MAY 2018 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,29 +746,29 @@ Package csquotes Info: Redefining alias 'default' -> 'czech'.
 (./BP_Pavlíková_Helena_2018.tex.aux)
 \openout1 = `BP_Pavlíková_Helena_2018.tex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 44.
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 (c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -780,10 +780,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 45.
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 (./BP_Pavlíková_Helena_2018.tex.out) (./BP_Pavlíková_Helena_2018.tex.out)
 \@outlinefile=\write4
 \openout4 = `BP_Pavlíková_Helena_2018.tex.out'.
@@ -815,7 +815,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <cvut-logo-bw.pdf, id=295, 554.07pt x 193.29715pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
 <use cvut-logo-bw.pdf>
-Package pdftex.def Info: cvut-logo-bw.pdf  used on input line 45.
+Package pdftex.def Info: cvut-logo-bw.pdf  used on input line 44.
 (pdftex.def)             Requested size: 184.5pt x 64.36635pt.
  [1
 
@@ -824,33 +824,33 @@ Package pdftex.def Info: cvut-logo-bw.pdf  used on input line 45.
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 45.
+(Font)              using `T1/lmr/bx/n' instead on input line 44.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 45.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 44.
 (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 45.
+(Font)              using `T1/lmss/bx/n' instead on input line 44.
 
 [3
 
 ] [4
 
 ] [5]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 44.
  (c:/texlive/2018/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 44.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 45.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 44.
  [6
 
 ] [7
@@ -880,19 +880,26 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
  [9
 
+] [10]) [11] [12
+
 ]
-Underfull \vbox (badness 1122) has occurred while \output is active []
+(./BP_Pavlíková_Helena_2018.tex.lof
 
- [10])
-[11] [12
+LaTeX Warning: Citation `tombs' on page xiii undefined on input line 9.
 
-] (./BP_Pavlíková_Helena_2018.tex.lof) [13] [14
+
+LaTeX Warning: Citation `cernyVit' on page xiii undefined on input line 13.
+
+
+LaTeX Warning: Citation `building' on page xiii undefined on input line 17.
+
+) [13] [14
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \chapter
+l.55 \chapter
              {CÃ­l prÃ¡ce} [1
 
 
@@ -900,354 +907,395 @@ l.56 \chapter
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \chapter
+l.55 \chapter
              {CÃ­l prÃ¡ce} [2
 
 ] [3] [4
 
-] [5]
-<3dcitydb.png, id=498, 658.71094pt x 502.12593pt>
+]
+
+LaTeX Warning: Citation `3DCityDB' on page 5 undefined on input line 70.
+
+
+LaTeX Warning: Citation `3DCityDB' on page 5 undefined on input line 75.
+
+[5]
+
+LaTeX Warning: Citation `3DCityDB' on page 6 undefined on input line 79.
+
+<3dcitydb.png, id=487, 658.71094pt x 502.12593pt>
 File: 3dcitydb.png Graphic file (type png)
 <use 3dcitydb.png>
-Package pdftex.def Info: 3dcitydb.png  used on input line 83.
+Package pdftex.def Info: 3dcitydb.png  used on input line 82.
 (pdftex.def)             Requested size: 369.00627pt x 281.28821pt.
- [6 <./3dcitydb.png>]
-<vsp2.png, id=508, 352.31625pt x 275.52937pt>
+[6 <./3dcitydb.png>]
+
+LaTeX Warning: Citation `VSP' on page 7 undefined on input line 93.
+
+
+LaTeX Warning: Citation `VSP' on page 7 undefined on input line 97.
+
+
+LaTeX Warning: Citation `VSP' on page 7 undefined on input line 101.
+
+<vsp2.png, id=495, 352.31625pt x 275.52937pt>
 File: vsp2.png Graphic file (type png)
 <use vsp2.png>
-Package pdftex.def Info: vsp2.png  used on input line 108.
+Package pdftex.def Info: vsp2.png  used on input line 107.
 (pdftex.def)             Requested size: 352.31538pt x 275.52869pt.
-<vsp.png, id=509, 343.2825pt x 270.25969pt>
+<vsp.png, id=496, 343.2825pt x 270.25969pt>
 File: vsp.png Graphic file (type png)
 <use vsp.png>
-Package pdftex.def Info: vsp.png  used on input line 115.
+Package pdftex.def Info: vsp.png  used on input line 114.
 (pdftex.def)             Requested size: 343.28165pt x 270.25902pt.
- [7]
-<tomb.jpg, id=517, 493.89317pt x 397.485pt>
+[7]
+
+LaTeX Warning: Citation `tombs' on page 8 undefined on input line 131.
+
+<tomb.jpg, id=502, 493.89317pt x 397.485pt>
 File: tomb.jpg Graphic file (type jpg)
 <use tomb.jpg>
-Package pdftex.def Info: tomb.jpg  used on input line 135.
+Package pdftex.def Info: tomb.jpg  used on input line 134.
 (pdftex.def)             Requested size: 493.89197pt x 397.48402pt.
+
+LaTeX Warning: Citation `tombs' on page 8 undefined on input line 135.
+
+
+LaTeX Warning: Citation `tombs' on page 8 undefined on input line 135.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./vsp2.png>] [9 <./vsp.png>] [10 <./tomb.jpg>] [11] [12]
-<VRTKsetup.png, id=550, 457.71pt x 673.01437pt>
+ [8 <./vsp2.png>] [9 <./vsp.png>] [10 <./tomb.jpg>]
+
+LaTeX Warning: Citation `UnityVR' on page 11 undefined on input line 161.
+
+[11]
+
+LaTeX Warning: Citation `UnityVR' on page 12 undefined on input line 169.
+
+
+LaTeX Warning: Citation `VRTKlic' on page 12 undefined on input line 173.
+
+
+LaTeX Warning: Citation `VRTK' on page 12 undefined on input line 176.
+
+[12]
+<VRTKsetup.png, id=526, 457.71pt x 673.01437pt>
 File: VRTKsetup.png Graphic file (type png)
 <use VRTKsetup.png>
-Package pdftex.def Info: VRTKsetup.png  used on input line 188.
+Package pdftex.def Info: VRTKsetup.png  used on input line 187.
 (pdftex.def)             Requested size: 457.7089pt x 673.01273pt.
 
-Overfull \hbox (88.7089pt too wide) in paragraph at lines 188--189
+Overfull \hbox (88.7089pt too wide) in paragraph at lines 187--188
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 104.41248pt on input line 191.
+LaTeX Warning: Float too large for page by 104.41248pt on input line 190.
 
-[13] [14 <./VRTKsetup.png>] [15] [16
+
+LaTeX Warning: Citation `mono' on page 13 undefined on input line 210.
+
+[13] [14 <./VRTKsetup.png>]
+
+LaTeX Warning: Citation `swagger' on page 15 undefined on input line 218.
+
+[15] [16
 
 ]
-<appArch.pdf, id=573, 315.66835pt x 484.58742pt>
+<appArch.pdf, id=545, 315.66835pt x 484.58742pt>
 File: appArch.pdf Graphic file (type pdf)
 <use appArch.pdf>
-Package pdftex.def Info: appArch.pdf  used on input line 232.
+Package pdftex.def Info: appArch.pdf  used on input line 231.
 (pdftex.def)             Requested size: 369.01257pt x 566.47697pt.
 
 
-LaTeX Warning: Float too large for page by 0.00586pt on input line 235.
+LaTeX Warning: Float too large for page by 0.00586pt on input line 234.
 
 [17] [18 <./appArch.pdf>]
-<ERmodel.png, id=679, 758.835pt x 138.5175pt>
+<ERmodel.png, id=651, 758.835pt x 138.5175pt>
 File: ERmodel.png Graphic file (type png)
 <use ERmodel.png>
-Package pdftex.def Info: ERmodel.png  used on input line 258.
+Package pdftex.def Info: ERmodel.png  used on input line 257.
 (pdftex.def)             Requested size: 595.81416pt x 108.75972pt.
- [19] [20 <./ERmodel.png>] [21]
-Overfull \hbox (1.11423pt too wide) in paragraph at lines 343--344
-[]\T1/lmr/m/n/10.95 Uºivatel v ad-mi-nis-trá-tor-ském menu vy-bere po-loºku "vl
-o-ºit bu-dovu". 
- []
 
-<UCdiagram.png, id=701, 404.26031pt x 324.46219pt>
+
+LaTeX Warning: Citation `cernyVit' on page 19 undefined on input line 258.
+
+
+LaTeX Warning: Citation `cernyVit' on page 19 undefined on input line 258.
+
+[19] [20 <./ERmodel.png>] [21]
+<UCdiagram.png, id=672, 404.26031pt x 324.46219pt>
 File: UCdiagram.png Graphic file (type png)
 <use UCdiagram.png>
-Package pdftex.def Info: UCdiagram.png  used on input line 355.
+Package pdftex.def Info: UCdiagram.png  used on input line 354.
 (pdftex.def)             Requested size: 404.25932pt x 324.46138pt.
 
-Overfull \hbox (35.25932pt too wide) in paragraph at lines 355--356
+Overfull \hbox (35.25932pt too wide) in paragraph at lines 354--355
 [][] 
  []
 
-
-Overfull \hbox (0.31868pt too wide) in paragraph at lines 368--369
+[22]
+Overfull \hbox (0.31868pt too wide) in paragraph at lines 367--368
 \T1/lmr/m/n/10.95 API bylo na-vr-ºeno co nej-jed-no-du-²eji, ale zá-ro-ve¬ tak,
  aby pod-po-ro-valo v²echny
  []
 
-[22] [23 <./UCdiagram.png>]
-Overfull \hbox (5.73126pt too wide) in paragraph at lines 408--409
+[23 <./UCdiagram.png>]
+Overfull \hbox (5.73126pt too wide) in paragraph at lines 392--393
 []\T1/lmr/m/n/10.95 Do bu-doucna bu-deme ex-pe-ri-men-to-vat i s moº-ností ucho
 -
  []
 
-<api.png, id=724, 267.24844pt x 505.13719pt>
+<api.png, id=697, 267.24844pt x 505.13719pt>
 File: api.png Graphic file (type png)
 <use api.png>
-Package pdftex.def Info: api.png  used on input line 432.
+Package pdftex.def Info: api.png  used on input line 416.
 (pdftex.def)             Requested size: 267.24779pt x 505.13596pt.
-<apiJSON.png, id=725, 253.69781pt x 407.27156pt>
-File: apiJSON.png Graphic file (type png)
-<use apiJSON.png>
-Package pdftex.def Info: apiJSON.png  used on input line 439.
-(pdftex.def)             Requested size: 253.69719pt x 407.27055pt.
-[24] [25 <./api.png>] [26 <./apiJSON.png>]
+[24] [25 <./api.png>] [26
+
+]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 451.
+(hyperref)                than one, level fixed on input line 427.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 455.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 431.
 
 (c:/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 463.
- [27
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 439.
+ [27]
 
-] [28] [29]
-<screen1.png, id=823, 776.14969pt x 599.23875pt>
+LaTeX Warning: Citation `UnityJSON' on page 28 undefined on input line 480.
+
+
+LaTeX Warning: Citation `UnityJSON' on page 28 undefined on input line 482.
+
+[28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+
+LaTeX Warning: Citation `mono' on page 30 undefined on input line 529.
+
+
+LaTeX Warning: Citation `unityFAQ' on page 30 undefined on input line 529.
+
+[30] [31]
+<screen1.png, id=867, 776.14969pt x 599.23875pt>
 File: screen1.png Graphic file (type png)
 <use screen1.png>
-Package pdftex.def Info: screen1.png  used on input line 561.
+Package pdftex.def Info: screen1.png  used on input line 598.
 (pdftex.def)             Requested size: 369.00655pt x 284.89738pt.
- [30]
-[31 <./screen1.png>]
-Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [32]
-<MockMisto.png, id=883, 701.62125pt x 481.8pt>
+
+LaTeX Warning: Citation `building' on page 32 undefined on input line 599.
+
+
+LaTeX Warning: Citation `building' on page 32 undefined on input line 599.
+
+
+LaTeX Warning: Citation `unityFAQtext' on page 32 undefined on input line 606.
+
+[32 <./screen1.png>] [33]
+<MockMisto.png, id=902, 701.62125pt x 481.8pt>
 File: MockMisto.png Graphic file (type png)
 <use MockMisto.png>
-Package pdftex.def Info: MockMisto.png  used on input line 626.
+Package pdftex.def Info: MockMisto.png  used on input line 663.
 (pdftex.def)             Requested size: 369.00972pt x 253.39723pt.
-<MockPocasi.png, id=885, 701.62125pt x 437.635pt>
+<MockPocasi.png, id=904, 701.62125pt x 437.635pt>
 File: MockPocasi.png Graphic file (type png)
 <use MockPocasi.png>
-Package pdftex.def Info: MockPocasi.png  used on input line 635.
+Package pdftex.def Info: MockPocasi.png  used on input line 672.
 (pdftex.def)             Requested size: 369.00972pt x 230.16916pt.
 
-Overfull \hbox (1.4751pt too wide) in paragraph at lines 641--642
+Overfull \hbox (1.4751pt too wide) in paragraph at lines 678--679
 \T1/lmr/m/n/10.95 Administrátorský re-ºim, ne-boli re-ºim ar-chi-tekta (Ar-chi-
 tect Mode), bude umoº-
  []
 
-<ArchitectMock.png, id=887, 524.96124pt x 513.92pt>
+[34] [35 <./MockMisto.png> <./MockPocasi.png>]
+<ArchitectMock.png, id=916, 524.96124pt x 513.92pt>
 File: ArchitectMock.png Graphic file (type png)
 <use ArchitectMock.png>
-Package pdftex.def Info: ArchitectMock.png  used on input line 644.
+Package pdftex.def Info: ArchitectMock.png  used on input line 681.
 (pdftex.def)             Requested size: 369.00833pt x 361.24716pt.
-[33] [34 <./MockMisto.png> <./MockPocasi.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [36 <./ArchitectMock.png>]
 
- [35 <./ArchitectMock.png>] [36] [37]
-<screen2.png, id=921, 959.08313pt x 606.01407pt>
+LaTeX Warning: Citation `VRuse' on page 37 undefined on input line 700.
+
+
+Underfull \vbox (badness 4634) has occurred while \output is active []
+
+ [37]
+
+LaTeX Warning: Citation `VRTK' on page 38 undefined on input line 714.
+
+[38]
+<screen2.png, id=935, 959.08313pt x 606.01407pt>
 File: screen2.png Graphic file (type png)
 <use screen2.png>
-Package pdftex.def Info: screen2.png  used on input line 732.
+Package pdftex.def Info: screen2.png  used on input line 769.
 (pdftex.def)             Requested size: 369.00668pt x 233.16356pt.
- [38 <./screen2.png>] [39
+ [39 <./screen2.png>] [40
 
-] [40
+] (./BP_Pavlíková_Helena_2018.tex.bbl [41]
+[42
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 2922) in paragraph at lines 753--757
-[]\T1/lmr/m/sc/10.95 Chair of Ge-o-in-for-ma-tics, Tech-nische Uni-ver-si-tät M
-ün-
+Underfull \hbox (badness 2582) in paragraph at lines 33--35
+[]\T1/lmr/m/n/10.95 TheStonefox: \T1/lmr/m/it/10.95 The MIT Li-cense (MIT) [on-
+line]\T1/lmr/m/n/10.95 . [cit. 2018-05-05].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--757
-\T1/lmr/m/sc/10.95 chen\T1/lmr/m/n/10.95 , 3D City Da-ta-base for Ci-tyGML Do-c
-u-men-tation ver-
+Underfull \hbox (badness 4024) in paragraph at lines 33--35
+\T1/lmr/m/n/10.95 Do-stupné z: []$\T1/lmtt/m/n/10.95 https : / / github\OML/lmm
+/m/it/10.95 :\T1/lmtt/m/n/10.95 com / thestonefox / VRTK / blob / master /
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 753--757
-\T1/lmr/m/n/10.95 sion 3.3 [on-line], 2016, [cit. 18. 4. 2018], do-stupné z []$
-\T1/lmtt/m/n/10.95 https :
+Underfull \hbox (badness 5119) in paragraph at lines 46--49
+[]\T1/lmr/m/n/10.95 SmartBear Soft-ware: \T1/lmr/m/it/10.95 Get-ting Star-ted W
+ith Swag-ger-Hub [on-line]\T1/lmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 753--757
-\T1/lmtt/m/n/10.95 / / github\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / 3dci
-tydb / 3dcitydb / blob / master / Documentation /
+Underfull \hbox (badness 3758) in paragraph at lines 46--49
+\T1/lmr/m/n/10.95 [cit. 2018-04-18]. Do-stupné z: []$\T1/lmtt/m/n/10.95 https :
+ / / app\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 swaggerhub\OML/lmm/m/it/10.95 :
+\T1/lmtt/m/n/10.95 com / help /
+ []
+
+[43]
+Underfull \hbox (badness 1424) in paragraph at lines 61--64
+[]\T1/lmr/m/n/10.95 Nig: \T1/lmr/m/it/10.95 How to va-li-date SSL cer-ti-fi-ca-
+tes when using Htt-pWebRequest
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 797--801
-[]\T1/lmr/m/sc/10.95 Unity Tech-no-lo-gies\T1/lmr/m/n/10.95 , JSON Se-ri-a-li-z
-ation [on-line], 2018, [cit.
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
+\T1/lmtt/m/n/10.95 questions / 792342 / how -[] to -[] validate -[] ssl -[] cer
+tificates -[] when -[]
  []
 
+) [44] [45
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--801
-\T1/lmr/m/n/10.95 29. 4. 2018], do-stupné z []$\T1/lmtt/m/n/10.95 https : / / d
-ocs\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 unity3d\OML/lmm/m/it/10.95 :\T1/lmtt
-/m/n/10.95 com / Manual /
- []
+] [46] [47
 
-
-Underfull \hbox (badness 4353) in paragraph at lines 803--807
-[]\T1/lmr/m/sc/10.95 Programmer\T1/lmr/m/n/10.95 , Se-ri-a-lize and De-se-ri-a-
-lize Json and Json Array
- []
-
-
-Underfull \hbox (badness 3029) in paragraph at lines 803--807
-\T1/lmr/m/n/10.95 in Unity [on-line], 15. 2. 2017, [cit. 29. 4. 2018], do-stupn
-é z
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 803--807
-[]$\T1/lmtt/m/n/10.95 https : / / stackoverflow\OML/lmm/m/it/10.95 :\T1/lmtt/m/
-n/10.95 com / questions / 36239705 / serialize -[]
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 816--820
-[]\T1/lmr/m/sc/10.95 Nig\T1/lmr/m/n/10.95 , How to va-li-date SSL cer-ti-fi-ca-
-tes when using Htt-
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 816--820
-\T1/lmr/m/n/10.95 pWebRequest [on-line], 17. 9. 2014, [cit. 3. 5. 2018], do-stu
-pné z
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 816--820
-[]$\T1/lmtt/m/n/10.95 https : / / answers\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.9
-5 unity\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / questions / 792342 / how -
-[] to -[] validate -[]
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 823--827
-[]\T1/lmr/m/sc/10.95 TheStonefox\T1/lmr/m/n/10.95 , The MIT Li-cense (MIT) [on-
-line], 2018, [cit. 5.
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 829--833
-\T1/lmr/m/n/10.95 do-stupné z []$\T1/lmtt/m/n/10.95 https : / / www\OML/lmm/m/i
-t/10.95 :\T1/lmtt/m/n/10.95 turbosquid\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 c
-om / FullPreview / Index\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 cfm /
- []
-
-[42] [43
-
-] [44] [45
-
-] [46
+] [48
 
 ]
-<scenar.pdf, id=990, 614.295pt x 794.97pt>
+<scenar.pdf, id=1021, 614.295pt x 794.97pt>
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf>
-Package pdftex.def Info: scenar.pdf  used on input line 912.
+Package pdftex.def Info: scenar.pdf  used on input line 851.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf>
-Package pdftex.def Info: scenar.pdf  used on input line 912.
+Package pdftex.def Info: scenar.pdf  used on input line 851.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<scenar.pdf, id=993, page=1, 614.295pt x 794.97pt>
+<scenar.pdf, id=1024, page=1, 614.295pt x 794.97pt>
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [47]
+ [49]
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: scenar.pdf Graphic file (type pdf)
-<use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: scenar.pdf Graphic file (type pdf)
 <use scenar.pdf, page 1>
-Package pdftex.def Info: scenar.pdf , page1 used on input line 912.
+Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [48 <./scenar.pdf>]
-<dotaznik.pdf, id=1018, 614.295pt x 794.97pt>
+File: scenar.pdf Graphic file (type pdf)
+<use scenar.pdf, page 1>
+Package pdftex.def Info: scenar.pdf , page1 used on input line 851.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [50 <./scenar.pdf>]
+<dotaznik.pdf, id=1048, 614.295pt x 794.97pt>
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf>
-Package pdftex.def Info: dotaznik.pdf  used on input line 915.
+Package pdftex.def Info: dotaznik.pdf  used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf>
-Package pdftex.def Info: dotaznik.pdf  used on input line 915.
+Package pdftex.def Info: dotaznik.pdf  used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<dotaznik.pdf, id=1021, page=1, 614.295pt x 794.97pt>
+<dotaznik.pdf, id=1051, page=1, 614.295pt x 794.97pt>
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [49
+ [51
 
 ]
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: dotaznik.pdf Graphic file (type pdf)
 <use dotaznik.pdf, page 1>
-Package pdftex.def Info: dotaznik.pdf , page1 used on input line 915.
+Package pdftex.def Info: dotaznik.pdf , page1 used on input line 854.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [50 <./dotaznik.pdf>]
+ [52 <./dotaznik.pdf>]
 \tf@toc=\write5
 \openout5 = `BP_Pavlíková_Helena_2018.tex.toc'.
 
 \tf@lof=\write6
 \openout6 = `BP_Pavlíková_Helena_2018.tex.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 919.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 919.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 858.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 858.
 
 (./BP_Pavlíková_Helena_2018.tex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 919.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 919.
-Package rerunfilecheck Info: File `BP_Pavlíková_Helena_2018.tex.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: 2B6AB47134A6C8DDBBCAFF4BB34054AE;10771.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 858.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 858.
 
+
+Package rerunfilecheck Warning: File `BP_Pavlíková_Helena_2018.tex.out' has cha
+nged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `BP_Pavlíková_Helena_2018.tex.out':
+(rerunfilecheck)             Before: CA7F6137E9C9162C379E3E50DA952319;10850
+(rerunfilecheck)             After:  30630110A5319F93902FE13BA0BDDFFF;10945.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 919.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 858.
  ) 
 Here is how much of TeX's memory you used:
- 17303 strings out of 492649
- 241362 string characters out of 6133385
- 439264 words of memory out of 5000000
- 20698 multiletter control sequences out of 15000+600000
+ 17397 strings out of 492649
+ 242888 string characters out of 6133385
+ 435264 words of memory out of 5000000
+ 20737 multiletter control sequences out of 15000+600000
  69936 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,49p,1112b,1968s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1268,10 +1316,10 @@ fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
 /lm/lmtk10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:
 /texlive/2018/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on BP_Pavlíková_Helena_2018.tex.pdf (66 pages, 6851125 bytes).
+Output written on BP_Pavlíková_Helena_2018.tex.pdf (68 pages, 6849999 bytes).
 PDF statistics:
- 1167 PDF objects out of 1200 (max. 8388607)
- 1032 compressed objects within 11 object streams
- 287 named destinations out of 1000 (max. 500000)
- 681 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1209 PDF objects out of 1440 (max. 8388607)
+ 1075 compressed objects within 11 object streams
+ 340 named destinations out of 1000 (max. 500000)
+ 676 words of extra memory for PDF output out of 10000 (max. 10000000)
 
