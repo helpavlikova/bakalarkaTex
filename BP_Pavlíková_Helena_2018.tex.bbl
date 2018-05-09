@@ -71,6 +71,11 @@ IMD: \emph{Loading texture file from png/jpg file on disk {[online]}}. [cit.
   2018-05-08].
 \urlprefix\biburl{https://answers.unity.com/questions/432655/loading-texture-file-from-pngjpg-file-on-disk.html}
 
+\bibitem{travis}
+Porta, J.: \emph{Automatically Build your Unity3D Project in the Cloud using
+  TravisCI for free}. [cit. 2018-05-09].
+\urlprefix\biburl{https://jonathan.porta.codes/2015/04/17/automatically-build-your-unity3d-project-in-the-cloud-using-travisci-for-free/}
+
 \bibitem{VRuse}
 Ng, C.: \emph{Lessons in Mobile VR Usability Testing}. [cit. 2018-05-08].
 \urlprefix\biburl{https://medium.com/fulldive/lessons-in-mobile-vr-usability-testing-85fe2fb3abd5}

@@ -16,7 +16,7 @@
   aboveskip=3mm,
   belowskip=3mm,
   showstringspaces=false,
-  columns=flexible,
+  columns=fullflexible,
   basicstyle={\small\ttfamily},
   numbers=none,
   breaklines=true,
@@ -641,6 +641,40 @@ rend.material.mainTexture = LoadTexture(texturePath);
 \end{lstlisting}
 
 
+	\section{Průběžná integrace}
+	Průběžná integracie neboli continuous integration (CI), je proces, který zjednodušuje vývoj nového softwaru. Jedná se o proces, kdy se při každé změně přidané do repozitáře automaticky spustí kompilace celé aplikace na vzdáleném serveru. Díky tomu se jednak ušetří čas, jednak se zamezí mnohým chybám, které by mohly vzniknout, pokud by se celý (často dlouhý a komplikovaný) proces kompilace prováděl manuálně.
+	
+	\subsection{TravisCI}
+Pro potřeby průběžné integrace této bakalářské práce byla zvolena technologie TravisCI. Jedná se o webovou službu propojenou s GitHubem. Pokud tedy vývojář používá GitHub, při každém spuštění příkazu \uv{git push} se automaticky spustí kompilace na systému TravisCI. K tomu je potřeba mít v hlavním adresáři gitového repozitáře konfigurační soubor \emph{.travis.yml} a také složku s názvem Scripts, která obsahuje ty skripty, které budou na serveru spuštěny (typicky tedy instalaci potřebných aplikací, kompilační skripty a testovací skripty). Výhoda průběžné integrace je nejen automatizace, ale také přehled o kompilaci na dálku, neboť při každém běhu služby TravisCI se výsledek přepošle vlastníkovi daného repozitáře na email.
+
+\subsection{CI a Unity}
+Pro potřeby průběžné integrace programů vyvíjených pod Unity 3D je potřeba na vzdálený server Unity nainstalovat. Toto zajistí skript install.sh, který stáhne potřebnou distribuci Unity a nainstaluje ji na vzdálený server. Poté je spuštěn soubor build.sh, který zkompiluje projekt z repozitáře pro všechny platformy, které jsou v tomto skriptu nadefinovány. Ukázka instalačního kódu převzatého pro tento účel z \cite{travis} je k vidění níže:
+
+\begin{lstlisting}[frame=single]
+#! /bin/sh
+
+BASE_URL="https://download.unity3d.com/download_unity"
+VERSION=2017.4.0f1
+
+download() {
+  file=$1
+  url="$BASE_URL/52d9cb89b362/MacEditorInstaller/Unity-2017.4.2f2.pkg"
+
+  echo "Downloading from $url: "
+  curl -o `basename "$package"` "$url"
+}
+
+install() {
+  package=$1
+  download "$package"
+
+  echo "Installing "`basename "$package"`
+  sudo installer -dumplog -package `basename "$package"` -target /
+}
+
+install "MacEditorInstaller/Unity-$VERSION.pkg"
+\end{lstlisting}
+
 	\section{Grafické uživatelské rozhraní}
 	\label{sec:GUI}
 	
@@ -795,10 +829,11 @@ Simulátor zobrazuje ovladače v~rukou uživatele jako červený a zelený bod, 
 	\item[3D] Three dimensional, trojrozměrný
 	\item[API] Apliaction programming interface,  rozhraní pro programování aplikací
 	\item[AR] Augmented reality, rozšířená realita
+	\item[CI] Continuous integration, průběžná integrace
 	\item[CLR] Common Language Runtime, runtime pro C\#
     \item[CityGML] Aplikační schéma pro reprezentaci GML
 	\item[COLLADA] Formát pro interaktivní 3D scény, XML schéma
-	\item[DL] Datová vrstva
+	\item[DL] Datová Layer, datová vrstva
 	\item[ER] Entitně vztahový model databáze
 	\item[FS] File System, souborový systém
 	\item[GML] Geography Markup Language, geografický značkovací jazyk
