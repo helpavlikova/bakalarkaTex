@@ -427,22 +427,7 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
 \subsubsection{Přímé propojení s~databází}
  Toto téma bylo hlavní náplní týmového projektu HK (Hradec Králové) v~rámci předmětu SP2 (Softwarový týmový projekt 2). Kromě autorky této bakalářské práce se na dané semestrální práci podíleli také studenti FITu Josef Struž a Iuliia Ostrokomorets. 
    
-    K~tomuto účelu byla použita knihovna NpSQL. V~souboru Sqlconnector.cs ve třídě Sqlconnector je uložená proměnná \uv{connecting}, která v~sobě obsahuje informace o~připojení k~databázi (Server, Port atd.). Při inicializaci této třídy se vytvoří propojení s~databází. Tato třída v~sobě uchovává list Modelů (\uv{Model} je struktura, která obsahuje všechny informace o~daném modelu, které byly získány z~databáze). Nejdůležitější části tohoto kódu jsou níže:
-    \begin{lstlisting}[frame=single]
-    public Sqlconnector()
-    {
-        connection = new NpgsqlConnection(connstring);
-        connection.Open();
-        listItems();              
-    }
-
-    void listItems()
-    {
-        NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM models", connection);
-        NpgsqlDataReader dataReader = command.ExecuteReader();
-        
-    }
-	\end{lstlisting}
+    K~tomuto účelu byla použita knihovna NpSQL. V~souboru Sqlconnector.cs ve třídě Sqlconnector je uložená proměnná \uv{connecting}, která v~sobě obsahuje informace o~připojení k~databázi (Server, Port atd.). Při inicializaci této třídy se vytvoří propojení s~databází. Tato třída v~sobě uchovává list Modelů (\uv{Model} je struktura, která obsahuje všechny informace o~daném modelu, které byly získány z~databáze). 
     
     \subsubsection{JSON v~Unity}
 	
