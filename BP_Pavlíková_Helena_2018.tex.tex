@@ -10,6 +10,8 @@
 \usepackage{listings} %code snippets
 \RequirePackage{pdfpages}
 \setcounter{tocdepth}{3}
+\widowpenalty10000
+\clubpenalty10000
 
 \lstset{frame=tb,
   language=C,
@@ -46,7 +48,7 @@
 \begin{introduction}
 	Technologie zabývající se vizualizacemi pro virtuální realitu jsou jedny z~nejprogresivnějších odvětví dnešního IT sektoru. Mají široké spektrum využití, interaktivními hrami počínaje a architektonickými návrhy konče. Tyto technologie mají navíc veliký potenciál do budoucna, kdy by se mohly například stát součástí výuky na školách či běžnou domácí zábavou.
 
-    Projekt historického průvodce v~sobě nese přínos jak pro odbornou, tak pro širokou veřejnost. Vizualizace středověkých měst názorně přiblíží lidem naši historii a umožní jim procházet ulice měst tak, jak vypadaly před stovkami let. Zároveň ale tato práce nabízí využití i pro obory architektury nebo památkové péče, kde může napomoci vizualizovat staré či budoucí městské oblasti. Téma také úzce souvisí s~počítačovou grafikou a s~vývojem počítačových her, takže jistě osloví odborníky z~této oblasti.Právě toto mnohostranné využití bylo motivací autorky k~výběru daného tématu.
+    Projekt historického průvodce v~sobě nese přínos jak pro odbornou, tak pro širokou veřejnost. Vizualizace středověkých měst názorně přiblíží lidem naši historii a umožní jim procházet ulice měst tak, jak vypadaly před stovkami let. Zároveň ale tato práce nabízí využití i pro obory architektury nebo památkové péče, kde může napomoci vizualizovat staré či budoucí městské oblasti. Téma také úzce souvisí s~počítačovou grafikou a s~vývojem počítačových her, takže jistě osloví odborníky z~této oblasti. Právě toto mnohostranné využití bylo motivací autorky k~výběru daného tématu.
 
     Tato práce je součásti velkého projektu, který bude zpracovávat více studentů několik let. Další jeho části, jakými jsou například databázové jádro, navigace či serverová optimalizace jsou pokryty v~jiných semestrálních a bakalářských pracích.
 
@@ -90,7 +92,7 @@ Tato bakalářská práce si klade za cíl využít technologie VR (virtuální 
 
     \subsection{Virtuální stará Praha}
     
-    Projekt Virtuální Stará Praha vznikl v~roce 1999 pod vedením profesora J. Žáry jakožto spolupráce matematicko-fyzikální fakulty Univerzity Karlovy a katedry počítačové grafiky na FEL, ČVUT. Jedná se o~jednoduchou vizualizaci scény v~nejbližším okolí pražského Malostranského náměstí. \cite{VSP}
+    Projekt Virtuální Stará Praha vznikl v~roce 1999 pod vedením profesora J. Žáry jakožto spolupráce matematicko-fyzikální fakulty Univerzity Karlovy a katedry počítačové grafiky na FEL ČVUT. Jedná se o~jednoduchou vizualizaci scény v~nejbližším okolí pražského Malostranského náměstí. \cite{VSP}
     
         \subsubsection{Softwarové požadavky}
         
@@ -364,7 +366,7 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
     
       \subsection{Položky API}
       
-      API bylo navrženo co nejjednodušeji, ale zároveň tak, aby  podporovalo všechny požadavky, které nad databázi mohou být vzneseny. Databáze tedy vrátí na konkrétní dotaz nad touto množinou specifickou odpověď, s~pomocí které bude model umístěn do scény v~potřebné konfiguraci. Podrobné specifikace parametrů jsou popsány níže, jejich návrh v YAMLu je vidět na obr \ref{fig:yamlAPI}.
+      API bylo navrženo co nejjednodušeji, ale zároveň tak, aby  podporovalo všechny požadavky, které nad databázi mohou být vzneseny. Databáze tedy vrátí na konkrétní dotaz nad touto množinou specifickou odpověď, s~pomocí které bude model umístěn do scény v~potřebné konfiguraci. Podrobné specifikace parametrů jsou popsány níže, jejich návrh v YAMLu je vidět na obr \ref{fig:yamlAPI}. Pro ukázkový soubor JSON, který toto API může poskytovat viz sekci \ref{sec:json}
 	
 	\begin{description}
 		\item[Název modelu]
@@ -377,7 +379,7 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
 			Jednoznačné ID sloužící k~jeho identifikaci v~databázi.
 
 		\item[Souřadnice]
-			Tento parametr bude rozdělen na 3 podsložky, a to na rotaci, zvětšení (scale) a pozici (transpozici). Toto zjednoduší dotazování nad databází, například pro zobrazování všech modelů v~určité vzdálenosti bude potřeba pouze hodnota parametru určující pozici.
+			Tento parametr bude rozdělen na 3 podsložky, a to na rotaci (rotation), zvětšení (scale) a pozici (transposition). Toto zjednoduší dotazování nad databází, například pro zobrazování všech modelů v~určité vzdálenosti bude potřeba pouze hodnota parametru určující pozici.
 			
 		\item[Roční období]
 			Čtyři klasické roční období uložené pomocí typu enum.
@@ -430,8 +432,11 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
     K~tomuto účelu byla použita knihovna NpSQL. V~souboru Sqlconnector.cs ve třídě Sqlconnector je uložená proměnná \uv{connecting}, která v~sobě obsahuje informace o~připojení k~databázi (Server, Port atd.). Při inicializaci této třídy se vytvoří propojení s~databází. Tato třída v~sobě uchovává list Modelů (\uv{Model} je struktura, která obsahuje všechny informace o~daném modelu, které byly získány z~databáze). 
     
     \subsubsection{JSON v~Unity}
+    \label{sec:json}
 	
 	Finální aplikace ovšem nekomunikuje s~databází přímo, jako to bylo implementováno v~projektu pro předmět SP2, nýbrž přes REST API (viz návrh použitého API v~kapitole \ref{sec:API}). Navržené API bude komunikovat s~databázovým serverem za pomoci souboru JSON. Ukázková odpověď serveru v podobě souboru JSON používaná při testování tohoto projektu je k vidění níže.
+	
+	\begin{minipage}[c]{0.95\textwidth}
 	\begin{lstlisting}[frame=single]
 	{
     "model_name": "house42",
@@ -461,11 +466,13 @@ Nejspodnější datová vrstva (data layer DL) obsahuje datové úložiště, kt
   }
 
 \end{lstlisting}
+\end{minipage}
 	
 	 JSON je zavedený standard, takže jej Unity podporuje a nabízí i knihovny, které umožní jeho deserializaci. Jedná se konkrétně o~vestavěnou třídu JSONUtility, která nabízí rozhraní pro serializaci i deserializaci JSON souboru. Je tedy možné snadno namapovat obsah JSON souboru do vytvořené třády s~příslušnými třídními proměnnými, na které je možné JSON namapovat. \cite{UnityJSON}
 
 V~tuto chvíli ovšem ještě není zavedena podpora polí objektů v~rámci jednoho JSONu. \cite{UnityJSON} Vzhledem k~tomu, že API pro projekt Virtuální Průvodce očekává JSON soubory právě v~tomto formátu, neboli pole modelů budov v~jediném souboru, je nutné tuto funkcionalitu dodatečně zajistit za pomoci dodatečných obalovacích tříd. Můžeme si tedy nadefinovat ještě jednou další třídu, která bude sloužit jako obal, který v~sobě bude uchovávat pole modelů. V~implementaci byla tato třída pojmenována Root, neboť je jakýmsi kořenem všech podtříd v~rámci JSON souboru. Toto pole modelů má ovšem název, který by nebylo možno na nic v~souboru JSON namapovat. To se dá jednoduše spravit tím, že před přijaté pole modelů od API po přečtení připojíme řetězec obsahující název proměnné, do které se uloží pole modelů s~pomocí následující funkce.
 
+\begin{minipage}[c]{0.95\textwidth}
 \begin{lstlisting}[frame=single]
 public string fixJson(string value)
     {
@@ -474,9 +481,11 @@ public string fixJson(string value)
     }
 
 \end{lstlisting}
+\end{minipage}
 
 Aby byla serializace možná, je nutné nad deklaraci mapovací třídy Model přidat Unity direktivu [System.Serialiazble]. Všechny definice tříd, na které se JSON namapuje, jsou k~vidění níže. 
 
+\begin{minipage}[c]{0.95\textwidth}
 \begin{lstlisting}[frame=single]
 public class Root
 {
@@ -508,11 +517,13 @@ public class Model
     public Coords scale_coords;
 }
 \end{lstlisting}
+\end{minipage}
 
 	\subsubsection{Mono a HTTPS}
 	
 	Výchozí nastavení Mono (na kterém C\# v~rámci Unity běží) je v~rámci bezpečnosti vysoce selektivní, slovy vývojářů \uv{Mono nevěří nikomu!} \cite{mono}. Pokud je tedy potřeba pomocí HTTPS protokolu přistupovat k~serveru, je pravděpodobné, že tomuto přístupu bude zamezeno. Řešení tohoto problému je funkce, která projde všechny chyby, které se v~žádosti o~certifikáty naskytly, a manuálně vytvoří nový certifikát X509, který znovu sama zkontroluje. Zavoláním této funkce těsně před přístupem k~API s~pomocí GET zajistí správný průběh komunikace mezi serverem a aplikací. Níže je ukázka funkce, kterou za tímto účelem nadefinovali uživatelé Unity \cite{unityFAQ}.
 	
+	\begin{minipage}[c]{0.95\textwidth}
 	\begin{lstlisting}[frame=single]
 public bool MyRemoteCertificateValidationCallback(System.Object sender,
    X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
@@ -543,10 +554,12 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
         return isOk;
 }
 	\end{lstlisting}
+	\end{minipage}
 	
 	\subsection{HTTP propojení s API}
 	Následující kód provádí už samotný přístup k API přes HTTP (hyper text transfer protocol). Veškerá logika popisovaná v této sekci je uložena v prováděna třídou DataReader v souboru DataReader.cs.
 	
+	\begin{minipage}[c]{0.95\textwidth}
 	\begin{lstlisting}[frame=single]
 	 private string GetJSONfromAPI()
     {
@@ -572,6 +585,7 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
 
     }
 	\end{lstlisting}
+	\end{minipage}
 	
 	
 	\section{Vykreslení v~Unity}
@@ -590,6 +604,7 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
     
     Odkaz na textury je nadefinovaný v~proměnné, jejíž obsah byl získán z~databáze přes API. Textury jsou načítány ze souboru ve FS, který je v~této proměnné uložen. Soubor je otevřen, načten do pole bajtů a následně je toto pole bajtů vloženo do speciály třídy Texture2D, kterou interně definuje Unity. Kód tohoto načítání je převzat z~\cite{unityFAQtext}, ukázka níže.
 
+\begin{minipage}[c]{0.95\textwidth}
 \begin{lstlisting}[frame=single]
   public static Texture2D LoadTexture(string filePath)
     {
@@ -606,7 +621,8 @@ public bool MyRemoteCertificateValidationCallback(System.Object sender,
         }
         return tex;
     }
-        \end{lstlisting}	
+        \end{lstlisting}
+        \end{minipage}	
         
         
     \subsection{StreamingAssets}
@@ -616,6 +632,7 @@ To ovšem znamená, že i hotová zkompilovaná aplikace musí mít tyto odkazy 
 
 Tento problém řeší Unity za pomocí složky StreamingAssets. Jedná se o~složku umístěnou v~adresáři Assets, ke které je možno přistupovat dynamicky. Pokud budou tedy všechny soubory, které aplikace za běhu dynamicky načítá, uloženy v~této složce, budou k~dispozici bez problémů i po kompilaci, neboť složka StreamingAssets je vždy nově vytvořena a přenesena i při kompilaci aplikace do nového projektu vedle spustitelného souboru. Ukázka dynamického volání souborů z~této složky a jejich následné využití je k~vidění níže:
 
+\begin{minipage}[c]{0.95\textwidth}
 \begin{lstlisting}[frame=single]
 objPath = Path.Combine(Application.streamingAssetsPath, model.file_link);
 texturePath = Path.Combine(Application.streamingAssetsPath, model.texture_link);
@@ -624,10 +641,11 @@ GetComponent<MeshFilter>().mesh = FastObjImporter.Instance.ImportFile(objPath);
 Renderer rend = GetComponent<Renderer>();
 rend.material.mainTexture = LoadTexture(texturePath);
 \end{lstlisting}
+\end{minipage}
 
 
 	\section{Průběžná integrace}
-	Průběžná integracie neboli continuous integration (CI), je proces, který zjednodušuje vývoj nového softwaru. Jedná se o proces, kdy se při každé změně přidané do repozitáře automaticky spustí kompilace celé aplikace na vzdáleném serveru. Díky tomu se jednak ušetří čas, jednak se zamezí mnohým chybám, které by mohly vzniknout, pokud by se celý (často dlouhý a komplikovaný) proces kompilace prováděl manuálně.
+	Průběžná integrace neboli continuous integration (CI), je proces, který zjednodušuje vývoj nového softwaru. Jedná se o proces, kdy se při každé změně přidané do repozitáře automaticky spustí kompilace celé aplikace na vzdáleném serveru. Díky tomu se jednak ušetří čas, jednak se zamezí mnohým chybám, které by mohly vzniknout, pokud by se celý (často dlouhý a komplikovaný) proces kompilace prováděl manuálně.
 	
 	\subsection{TravisCI}
 Pro potřeby průběžné integrace této bakalářské práce byla zvolena technologie TravisCI. Jedná se o webovou službu propojenou s GitHubem. Pokud tedy vývojář používá GitHub, při každém spuštění příkazu \uv{git push} se automaticky spustí kompilace na systému TravisCI. K tomu je potřeba mít v hlavním adresáři gitového repozitáře konfigurační soubor \emph{.travis.yml} a také složku s názvem Scripts, která obsahuje ty skripty, které budou na serveru spuštěny (typicky tedy instalaci potřebných aplikací, kompilační skripty a testovací skripty). Výhoda průběžné integrace je nejen automatizace, ale také přehled o kompilaci na dálku, neboť při každém běhu služby TravisCI se výsledek přepošle vlastníkovi daného repozitáře na email.
@@ -635,6 +653,7 @@ Pro potřeby průběžné integrace této bakalářské práce byla zvolena tech
 \subsection{CI a Unity}
 Pro potřeby průběžné integrace programů vyvíjených pod Unity 3D je potřeba na vzdálený server Unity nainstalovat. Toto zajistí skript install.sh, který stáhne potřebnou distribuci Unity a nainstaluje ji na vzdálený server. Poté je spuštěn soubor build.sh, který zkompiluje projekt z repozitáře pro všechny platformy, které jsou v tomto skriptu nadefinovány. Ukázka instalačního kódu převzatého pro tento účel z \cite{travis} je k vidění níže:
 
+\begin{minipage}[c]{0.95\textwidth}
 \begin{lstlisting}[frame=single]
 #! /bin/sh
 
@@ -659,6 +678,7 @@ install() {
 
 install "MacEditorInstaller/Unity-$VERSION.pkg"
 \end{lstlisting}
+\end{minipage}
 
 	\section{Grafické uživatelské rozhraní}
 	\label{sec:GUI}
@@ -850,7 +870,7 @@ Simulátor zobrazuje ovladače v~rukou uživatele jako červený a zelený bod, 
 \end{description}
 
 
-\chapter{Obsah přiloženého USB}
+\chapter{Obsah přiložené SD karty}
 
 
 \begin{figure}
