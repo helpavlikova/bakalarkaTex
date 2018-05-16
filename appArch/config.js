@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"","author":"","fileName":"appArch.pdf","bounds":[[480,737]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};
